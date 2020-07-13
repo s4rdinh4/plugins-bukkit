@@ -1,0 +1,85 @@
+package br.com.sgcraft;
+
+import org.bukkit.plugin.java.*;
+
+
+import java.util.*;
+import org.bukkit.entity.*;
+import net.milkbowl.vault.economy.*;
+import br.com.sgcraft.listeners.*;
+import org.bukkit.*;
+import org.bukkit.plugin.*;
+import org.bukkit.event.*;
+import org.bukkit.command.*;
+import br.com.sgcraft.comandos.*;
+import br.com.sgcraft.vender.*;
+
+public class Main extends JavaPlugin implements Listener {
+	public static Main pl;
+	public static String prefix;
+	public static HashMap<Player, Player> open;
+	public static String playerNotOnline;
+	public static String use;
+	public static String no_perm;
+	public static Economy econ;
+
+	
+	static {
+		Main.prefix = "§9[X9]";
+		Main.open = new HashMap<Player, Player>();
+		Main.playerNotOnline = "§c Esse Jogador esta Offline!";
+		Main.use = " §aVoce abriu o invent\u00e1rio do jogador!";
+		Main.no_perm = " §cVoce nao tem permissao para fazer isso!";
+	}
+
+	@SuppressWarnings("unused")
+	public void onEnable() {
+		final Server server = this.getServer();
+		final PluginManager pm = Bukkit.getPluginManager();
+		this.onComandos();
+		Bukkit.getConsoleSender().sendMessage("");
+		Bukkit.getConsoleSender().sendMessage("§b[SgCraftEssential] §aATIVADO COM SUCESSO!");
+		Bukkit.getConsoleSender().sendMessage("");
+		this.saveDefaultConfig();
+		this.reloadConfig();
+		pm.registerEvents((Listener) new ListenerX9(), (Plugin) this);
+		pm.registerEvents((Listener) new VipZeroFix(), (Plugin) this);
+		pm.registerEvents((Listener) new JoinMessage(), (Plugin) this);
+		pm.registerEvents((Listener) new BlockFunil(), (Plugin) this);
+		pm.registerEvents((Listener) new BlockCmds(), (Plugin) this);
+		pm.registerEvents((Listener) new FixBuff(), (Plugin) this);
+		pm.registerEvents((Listener) new RemoveBabeZombie(), (Plugin) this);
+		pm.registerEvents((Listener) new AdminListener(), (Plugin) this);
+		pm.registerEvents((Listener) new DisableMobDamage(), (Plugin) this);
+		Main.pl = this;
+	}
+
+	public void onDisable() {
+		Bukkit.getConsoleSender().sendMessage("");
+		Bukkit.getConsoleSender().sendMessage("§b[SgCraftEssential] §cDESATIVADO COM SUCESSO!");
+		Bukkit.getConsoleSender().sendMessage("");
+		HandlerList.unregisterAll((Plugin) this);
+	}
+
+	private void onComandos() {
+		this.getCommand("desencantar").setExecutor((CommandExecutor) new Desencantar());
+		this.getCommand("anunciar").setExecutor((CommandExecutor) new Anunciar());
+		this.getCommand("x9").setExecutor((CommandExecutor) new ComandoX9());
+		this.getCommand("buff").setExecutor((CommandExecutor) new ComandoBuff());
+		this.getCommand("venderlapis").setExecutor((CommandExecutor) new VenderLapis());
+		this.getCommand("venderfungo").setExecutor((CommandExecutor) new VenderFungo());
+		this.getCommand("vendercana").setExecutor((CommandExecutor) new VenderCana());
+		this.getCommand("vendermelancia").setExecutor((CommandExecutor) new VenderMelancia());
+		this.getCommand("vendermelanciabloco").setExecutor((CommandExecutor) new VenderMelanciaBloco());
+		this.getCommand("vendercacto").setExecutor((CommandExecutor) new VenderCacto());
+		this.getCommand("venderabobora").setExecutor((CommandExecutor) new VenderAbobora());
+		this.getCommand("vendercenoura").setExecutor((CommandExecutor) new VenderCenoura());
+		this.getCommand("vendercarnepodre").setExecutor((CommandExecutor) new VenderCarnePodre());
+		this.getCommand("venderosso").setExecutor((CommandExecutor) new VenderOsso());
+		this.getCommand("venderlinha").setExecutor((CommandExecutor) new VenderLinha());
+		this.getCommand("venderPrism").setExecutor((CommandExecutor) new VenderPrism());
+		this.getCommand("venderslime").setExecutor((CommandExecutor) new VenderSlime());
+		this.getCommand("venderouro").setExecutor((CommandExecutor) new VenderOuro());
+		this.getCommand("admin").setExecutor((CommandExecutor) new ComandoAdmin());
+	}	
+}

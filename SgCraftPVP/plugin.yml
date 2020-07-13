@@ -1,0 +1,9 @@
+main: br.com.sgcraft.pvpvip.Main
+name: SgCraftPVP
+version: 2.0
+author: Sardinhagamer_HD
+commands:
+  pvp:
+    description: Ativar/Desativar modo PVP.
+    usage: Erro no comando. Use /pvp on ou /pvp off
+    permission-message: Voce nao tem permissao..  

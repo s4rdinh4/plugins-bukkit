@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/igors/Desktop/SgCraft - Teste Plugins/custom.jar"/>
+	<classpathentry kind="lib" path="C:/Users/igors/Desktop/SgCraft - Teste Plugins/plugins/Vault.jar"/>
+	<classpathentry kind="lib" path="C:/Users/igors/Desktop/SimpleClans-Fix.jar"/>
+	<classpathentry kind="lib" path="C:/Users/igors/Desktop/SimpleClans.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+ModSide: CLIENT
+FMLCorePluginContainsFMLMod: Yes, yes it does
+FMLCorePlugin: forge.FMLLoadingPlugin
+

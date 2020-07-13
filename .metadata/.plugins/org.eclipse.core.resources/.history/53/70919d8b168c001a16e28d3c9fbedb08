@@ -1,0 +1,38 @@
+package br.com.sgcraft.fly;
+
+import org.bukkit.Bukkit;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
+
+public class ComandoMc implements CommandExecutor{
+
+	@Override
+	public boolean onCommand(CommandSender sender, Command cmd, String lb, String[] args) {
+	
+	if (sender instanceof Player) {
+		Player p = (Player) sender;
+	    if(p.hasPermission("mc.voar")) {
+		if(p.getAllowFlight() == true) {
+		p.setAllowFlight(false);
+		p.sendMessage("&cTapete mágico &4DESATIVADO!");
+
+		} 
+		else {
+			p.setAllowFlight(true);
+			p.sendMessage("&aTapete mágico &2ATIVADO!");
+		}
+	
+	}
+	    else {
+	    	p.sendMessage("&cApenas VIPS podem usar o &f/mc&c.");
+	    }
+	}
+	else {
+	Bukkit.getConsoleSender().sendMessage("Comando permitido somente para players!");
+	}
+		return false;
+	}
+
+}

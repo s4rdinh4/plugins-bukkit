@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path=""/>
+	<classpathentry kind="lib" path="C:/Users/igors/Desktop/Backups dos Servidores/P4FREE/spigot-1.8.8-R0.1-SNAPSHOT-latest.jar"/>
+	<classpathentry kind="lib" path="C:/Users/igors/Desktop/Backups dos Servidores/P4FREE/plugins/Vault.jar"/>
+	<classpathentry kind="output" path=""/>
+</classpath>

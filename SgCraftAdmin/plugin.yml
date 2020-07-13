@@ -1,0 +1,10 @@
+name: SgCraftAdmin
+version: 4.2.3
+main: br.com.sgcraft.admin.Main
+author: SARDINHA
+
+commands:
+  admin:
+    description: Para Entrar No Modo Admin
+  prender:
+    description: Para Preender Um Jogador

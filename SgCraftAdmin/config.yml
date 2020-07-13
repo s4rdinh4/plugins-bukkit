@@ -1,0 +1,79 @@
+#zAdmin v4.2.3! - Copryright IZ44KPvP 2017
+#Algumas ajudas para a sua config.
+#Mude as cores com &1=Azul Por Exemplo Se Voce Quer Uma Lista Completa De Cores Acesse:http://minecraft.gamepedia.com/Formatting_codes
+
+#----------------------------------------------Algumas Informaçoes Importantes----------------------------------------#
+#Permissions                                                                                                        #   
+#  - zadmin.command.admin Para Usar O Comando /Admin                                                                #
+#  - zadmin.command.cage Para Usar O Preender O Jogador                                                             #
+#Coisas Novas                                                                                                       #
+#  - Agora Voce Pode Configurar O ID De Alguns Itens, Foi Adicionado O Comando /cage E Tambem Foi Adicionado...     #
+#  O Items Para Preender O Jogador Que Sera Recebido Ao Entrar No Modo ADMIN                                        #
+#                                       Obrigado Por Baixar Compartilhe Esse Plugin                                 #
+#                                                  by IZ44KPvP                                                      #
+#-------------------------------------------------------------------------------------------------------------------#
+
+
+#------------------------------------------------Mensagens----------------------------------------------------------#
+
+#Default Lang of The Plugin Optional: en_US for English or pt_BR para Portugues do Brasil
+Language: pt_BR
+
+#Automatique Ban Command if Player are on Cage and Quit From The Server.(Leave Blank for Disable)
+Command_Ban: 'ban %player% Você foi banido por deslogar-se enquanto estava sob Revisão de um Staff.'
+
+#Mensagem Para Quem Nao Tem Permissao Para Usar O Modo Admin:
+Sem_Permissao: '&cVocê Não Tem Permissão Para Usar Esse Comando!'
+
+#Mensagem quando sair do modo Admin:
+Mensagen: '&aVocê Saiu Do Modo Admin.'
+
+InvisivelOff: '&4&lVocê agora não esta mais invisivel'
+
+#Mensagem quando entrar no modo Admin:
+Mensagem: '&cVocê Entrou No Modo Admin.'
+
+InvisivelOn: '&a&lAgora você esta invisivel para todos'
+
+#Console- Mensagem Que Sera Exibida  Para O Console Quando O Console Ultilizar O Comando
+Console: '&aSomente Jogadores Podem Usar O Comando'
+
+#--------------------------------------------Itens Name And Slot Config---------------------------------------------#
+#Slots Somente Em Numeros
+#Agora Voce Pode Mudar o nome do itens Que São Recebidos
+#Items
+Itens: true
+
+
+#Leave- Configure Nome E Slot Do Item De Troca Rapida
+Leave: '&6Sair Do Modo Admin'
+
+SlotLeave: 1
+#Item Leave Coloque O ID Do Item Desejado
+ItemLeave: 378
+
+#Stick- Configure Nome E Slot Do Item Que E Recebido Para Testar Knockback
+Stick: '&6Testar-AntiKnockBack'
+
+SlotStick: 3
+
+#Info- Configure Nome e Slot Do Item Que Obtem Informaçoes Do Jogador
+Info: '&6Informaçoes Do Jogador'
+
+SlotInfo: 5
+
+#ItemInfo Coloque O ID
+ItemInfo: 369
+
+#Sword- Configure Nome E Slot Da Espada Para Trolar Jogadores Com Afiaçao 20
+Sword: '&a&lHit-Kill'
+
+SlotSword: 9
+
+#Cage- Configure Nome E Slot Do Item Que Ira Preender O Jogador
+Cage: '&6Preender Jogador'
+
+SlotCage: 2
+
+#ItemCage
+ItemCage: 101

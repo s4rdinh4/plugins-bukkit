@@ -1,0 +1,46 @@
+package br.com.sgcraft.vender;
+
+import org.bukkit.Material;
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.inventory.InventoryClickEvent;
+import org.bukkit.inventory.ItemStack;
+
+public class VenderFarms implements Listener {
+
+	@EventHandler
+	public void OnSubControls(InventoryClickEvent e) {
+		if (e.getWhoClicked() instanceof Player) {
+			Player player = (Player) e.getWhoClicked();
+			if (e.getInventory().getTitle().equals("§8Vendas - Itens de Farm")) {
+				e.setCancelled(true);
+				ItemStack item = e.getCurrentItem();
+				switch (item.getItemMeta().getDisplayName()) {
+				case "§6Vender Trigo":
+					player.sendMessage("Tu clicou trigo");
+					break;
+				case "§aVender Cana-de-Açucar":
+					player.sendMessage("Mas Bah, isto e uma cana");
+					break;
+				case "§6Vender Cenoura":
+					player.sendMessage("Cueio");
+					break;
+				case "§eVender Batata":
+					player.sendMessage("Cueio");
+					break;
+				case "§6Vender Abobora":
+					player.sendMessage("Cueio");
+					break;
+				case "§2Vender cacto":
+					player.sendMessage("Cueio");
+					break;
+				
+				default:
+					return;
+				}
+
+			}
+		}
+	}
+}

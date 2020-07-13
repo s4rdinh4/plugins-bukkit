@@ -1,0 +1,32 @@
+author: Igor Sardinha
+main: br.com.sgcraft.arenax1.ArenaX1
+name: X1SgCraft
+version: 0.3.2
+commands:
+  arenax1:
+    aliases: [x1]
+    permission: arenax1.user
+    permission-message: §cVoce nao tem permissao!
+    usage: |
+      §aUse:
+      §a/<command> desafiar [player]
+      §a/<command> aceitar [player]
+      §a/<command> negar [player]
+  arenax1adm:
+    aliases: [x1adm]
+    permission: arenax1.admin
+    permission-message: §cVoce nao tem permissao!
+    usage: |
+      §cUsage:
+      §c/<command> criar [name] - create an arena
+      §c/<command> excluir [name] - remove an arena
+      §c/<command> pos1 [name] - set the first spawn
+      §c/<command> pos2 [name] - set the second spawn
+      §c/<command> setlobby - set lobby for all arenas
+      §c/<command> list - List all arenas
+permissions:
+  arenax1.user:
+    default: true
+  arenax1.admin:
+    default: op
+  

@@ -1,0 +1,207 @@
+message.enabledsp=&b[MACROS] Macro hulp aan
+message.autosp=&b[MACROS] Gebruikt configuratie &a%s
+message.automp=&b[MACROS] Gebruikt configuratie voor server &a%s
+
+options.title=Macro Instellingen
+options.selectconfig=Selecteer Configuratie
+options.option.title=Opties
+options.option.general=Algemene Instellingen
+options.option.enableoverride=Sta de&b Macro Overschrijving&f toe
+options.option.enableoverridechat=Sta overschrijving toe in de chat GUI
+options.option.enableautoswitch=Automatische schakelaar
+options.option.discovery=Automatische zoek Instellingen
+options.option.waitforhomecount=Wacht voor Huis telling
+options.option.commandhomelist=&b'Home'-lijst &fcommando
+options.option.commandtownlist=&bStad-lijst &fcommando
+options.newconfig.title=Voeg Configuratie Toe
+options.newconfig.prompt=Geef een naam voor de nieuwe configuratie.
+options.newconfig.prompt2=Gebruik huidige server adres
+options.newconfig.option=Kopieër huidige configuratie
+options.defaultconfig=Standaard Configuratie
+options.addconfig=&7<Voeg Configuratie Toe>
+
+gui.auto=Automatisch
+gui.add=Voeg toe
+gui.save=Opslaan
+gui.yes=Ja
+gui.no=Nee
+gui.ok=Ok
+gui.cancel=Annuleer
+gui.create=Creer
+gui.icon=Icoon
+gui.copy=Kopieër
+gui.move=Verplaats
+gui.delete=Verwijder
+gui.edit=Verander
+gui.importall=<< Importeer alles
+gui.refresh=Vernieuw
+
+macro.bind.title=Macro Bindingen
+macro.edit.title=Verander Macro
+macro.currentconfig=Configuratie: &f%s
+macro.config.global=Alle Configuraties
+macro.prompt.execute=<Druk op een macro toets om het uit te voeren>
+macro.prompt.edit=<Klik op een toets om het een macro toe te wijzen of veranderen>
+macro.prompt.bind=Verander macro binding voor &f%s
+macro.keyname.control=Control
+macro.keyname.alt=Alt
+macro.keyname.shift=Shift
+macro.option.title=Opties
+macro.option.inhibit=Onthoud parameters niet
+macro.option.global=Pas toe op alle configuraties.
+macro.action.title=Acties
+macro.action.editfile=Bestanden...
+macro.help.title=Help
+
+macro.help.line1=Vul hieronder je macro in, scheid commando's af met een "|"
+macro.help.line2=Voorbeeld: &c /give Player 123|/give Player 456
+macro.help.line3=Gebruik: &c$$<bestand.txt> &6om te verwijzen of &c$$m&6 om te selecteren
+macro.help.line4=&c$$? &6of&c $$[naam] &6om een bestand te kiezen voor een invoer
+macro.help.line5=&c$$0&6-&c$$9 &6om een vooraf getypte tekst te kiezen
+macro.help.line6=&c$$i &6om een item te kiezen of &c$$i:d &6voor items met 'damagevalue'
+macro.help.line7=&c$$t &6om een stad te kiezen of &c$$w &6voor een 'warp point'
+macro.help.line8=&c$$f &6om een vriend te kiezen of &c$$u &6voor een online persoon
+macro.help.line9=&c$$h &6om een 'home' te kiezen of &c$$p &6voor plaats met coordinaten
+macro.help.line10=Gebruik &c$$! &6om een tekst te typen, maar dat niet word verstuurd
+macro.help.line11=Begin scripts met &c$${&6 en eindig met &c}$$&6
+
+macro.help.line12=Controleer de modificaties van deze macro
+macro.help.line13=De macro word alleen uitgevoerd als je
+macro.help.line14=de specifieke toets indrukt
+
+macro.help.inhibit=Gebruik om te voorkomen dat parameters iedere keer onthouden worden
+macro.help.global=Gebruik om deze macro voor alle configuraties
+
+param.prompt.item=Selecteer een item voor toets <&e%s&c>
+param.prompt.town=Selecteer een stad voor toets <&e%s&c>
+param.prompt.home=Selecteer een 'home' voor toets <&e%s&c>
+param.prompt.person=Selecteer een %s voor toets <&e%s&c>
+param.prompt.friend=vriend
+param.prompt.user=gebruiker
+
+param.action.confirmdelete=Weet je zeker dat je dit wilt verwijderen?
+param.action.confirmdeletefile=Weet je zeker dat je dit bestand wilt verwijderen?
+
+list.new.file=&7<Nieuw Bestand>
+list.new.friend=&7<Voeg vriend toe>
+list.new.home=&7<Voeg een 'home' toe>
+list.new.town=&7<Voeg een stad toe>
+list.new.preset=&7<Voeg nieuwe tekst toe>
+list.prompt.preset=Typ hier nieuwe tekst
+
+editor.choosefile=Kies een bestand om te veranderen:
+editor.createnewfile=Creer een nieuw bestand:
+editor.editing=Veranderen %s
+
+entry.newentry=Nieuwe toegang:
+entry.newfriend=Nieuwe vriend:
+entry.newtown=Nieuwe stad:
+entry.newhome=Nieuwe 'home':
+entry.newfile=Nieuw bestand:
+entry.editentry=Verander toegang:
+entry.editfriend=Verander vriend:
+entry.edittown=Verander stad:
+entry.editgome=Verander 'home':
+entry.chooseicon=Kies een icoon:
+
+query.wait=Aan vragen bij server...
+query.failed=Aanvraag gaf geen resultaat
+query.results=Aanvraag resultaat:
+
+list.new.place=&7<Voeg plaats toe>
+entry.newplace=Nieuwe plaats:
+entry.editplace=Verander plaats:
+entry.usemylocation=<< Gebruik huidige coordinaten
+macro.mode.normal=Normale Macro
+macro.mode.keystate=Macro toets stand
+
+macro.prompt.edit.simple=<Druk een macro toets in om te veranderen>
+macro.prompt.keydown=Omlaag
+macro.prompt.keyheld=Ingedrukt
+macro.prompt.keyup=Omhoog
+macro.prompt.repeatrate=Herhaal vertraging (ms)
+
+macro.help2.line1=Toets-stand macro’s geven je de mogelijkheid om meerdere
+macro.help2.line2=macro’s op de &comhoog&6,  &comlaag&6 en &cingedrukte&6 toets te hebben.
+macro.help2.line3=Je kan geen parameters gebruiken in dit type macro, 
+macro.help2.line4=&c$$<bestand.txt>&c kan wel. Je kan scripts in de macro gebruiken,
+macro.help2.line5='wachtende' functies zoals &cWAIT&6 en &cLOOP&6 werken niet met &cingedrukte&6 toetsen.
+
+script.error.stack=Script kan niet worden uitgevoerd. Controleer de syntaxis
+script.error.context=Verkeerd verband in het script
+script.error.stackoverflow=Opstapel-vloed in het script
+
+options.option.alwaysgoback=Terug naar bindingen scherm
+options.option.optionsfirst=Laat opties zien voor het help menu
+options.option.simple=Gebruik simpele GUI beeld
+options.option.runstatus=Overschrijf scherm laat macro status zien
+options.option.configs=Configuratie Instellingen
+options.option.configs.use=Gebruik vooraf gebruikte instellingen voor:
+options.option.configs.friends=Vrienden lijst
+options.option.configs.homes=Lijst met 'home's'
+options.option.configs.towns=Lijst met steden
+options.option.configs.warps=Lijst met warp's
+options.option.configs.places=Lijst met plaatsen
+options.option.configs.presets=Vooraf ingestelde List
+options.option.commandwarplist=&bWarp lijst &fcommand
+options.option.commandwarplist2=&bWarp lijst &fextra-pagina commando
+options.option.commandwarplist2help=&7Gebruik &b%s &7voor pagina nummers
+options.option.advanced=Geadvanceerde instellingen
+options.option.reserved=Gereseveerde toetsen
+
+param.prompt.warp=Geef een warp naam voor <&e%s&c>
+list.new.warp=&7<Voeg warp toe>
+entry.newwarp=Nieuwe warp:
+entry.editwarp=Verander warp:
+
+macro.option.inhibit.simple=Geen Parameters
+macro.option.global.simple=Globaal
+
+macro.hover.empty=&8<Leeg>
+
+gui.options=Verander opties
+
+options.option.directmode=Kom in het bindingen menu zonder &bsneak
+options.option.compatibilitymode=Compatible Modus (Herstart vereist)
+options.option.disabledeepinject=Schakel diepe injectie uit
+options.option.keyboardedit=Veranderbaar toetsenbord layout
+options.option.debug=Debug modus
+options.option.chathistory=Sta verzonde berichten op in geschiedenis
+
+entry.displayname=Geef naam weer
+
+message.usingpack=&b[MACROS] Gebruikt texture pack &a%s
+message.badpack=&b[MACROS] Gefaald om met het texture pack &a%s&b overeeen te komen
+message.failedpack=&b[MACROS] Fout tijden het laden van het texture pack $a%s&b. Terugkeren naar standaard.
+
+script.error.nosign=&cJe hebt geen bordje in actieve inventaris
+
+macro.help.always=To force this macro to override conflicting key binds
+macro.option.always=Altijd overschrijven
+macro.option.always.simple=Nooit overschrijven
+
+macro.hover.overlay=Op dit moment overschreven door &a%s
+
+message.config=&b[MACROS] Gebruikt configuarie &a%s
+message.overlay.add=&b[MACROS] Geimporteerde configuarie &a%s
+message.overlay.remove=&b[MACROS] Configuarie &a%s&b uit geschakeld
+
+tooltip.options=Instellingen
+tooltip.editfile=Bestanden...
+tooltip.icons=Verander icoon
+tooltip.bind=Verander toets bindingen
+
+macro.icons.title=Icoon Beheer
+macro.icons.help=Klik op een icoon om een screenshot te maken
+macro.icons.town=Stad icoontjes:
+macro.icons.homes='Home' icoontjes:
+
+thumbnail.help.hint1=Maak een plaatje, klik om hem op te slaan
+thumbnail.help.hint2=of druk op ENTER om het op te slaan
+editor.title=Verander tekst bestand
+
+options.option.animation=Gebruik GUI animatie
+options.option.rememberpage=Onthoud scherm in het bindingen menu
+macro.prompt.edit.event=<Kies een gebeurtenis om te veranderen>
+macro.prompt.edit.button=<Kies een knop om te veranderen>
+macro.prompt.edit.unknown=&4<Help tekst niet beschikbaar>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;br.QuickCraft.Anunciar&apos; to &apos;br.com.sgcraft.Anunciar&apos;&#x0D;&#x0A;- Original project: &apos;SgCraftAnunciar&apos;&#x0D;&#x0A;- Original element: &apos;SgCraftAnunciar/br.QuickCraft.Anunciar&apos;&#x0D;&#x0A;- Renamed element: &apos;SgCraftAnunciar/br.com.sgcraft.Anunciar&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;br.QuickCraft.Anunciar&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/&lt;br.QuickCraft.Anunciar" name="br.com.sgcraft.Anunciar" qualified="false" references="true" stamp="1589520513243" textual="false" version="1.0"/>
+</session>

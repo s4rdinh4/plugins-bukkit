@@ -1,0 +1,176 @@
+macro.help.event.line3=Você está editando &cevento&6 de macro. Este tipo de macro não aceita
+macro.help.event.line4=parâmetros do usuário. Mas é possível incluir arquivos usando&c $$<file.txt>
+macro.help.event.line5=Lembre-se de usar &c$${&6 e &c}$$&6 para abrir e fechar a tag do script.
+
+# Event 1000 (onJoinGame)
+
+macro.help.event.1000.line6=&f<onJoinGame>
+macro.help.event.1000.line7=Este evento ocorrerá toda vez que entrar em um jogo (single player ou
+macro.help.event.1000.line8=Multiplayer) este evento pode ser usado para iniciar outros scripts ou
+macro.help.event.1000.line9=inserir comandos ao entrar em um servidor.
+macro.help.event.1000.line10=
+macro.help.event.1000.line11=
+
+# Event 1001 (onChat)
+
+macro.help.event.1001.line6=&f<onChat>
+macro.help.event.1001.line7=Este evento ocorrerá sempre que for exibido uma mensagem no chat
+macro.help.event.1001.line8=principal(servidor). É possível interceptar mensagens recebidas com a
+macro.help.event.1001.line9=variável &cCHAT&6.
+macro.help.event.1001.line10=
+macro.help.event.1001.line11=
+
+# Event 1002 (onHealthChange)
+
+macro.help.event.1002.line6=&f<onHealthChange>
+macro.help.event.1002.line7=Este evento ocorrerá sempre que houver alterações no nível de saúde
+macro.help.event.1002.line8=Ex: quando receber algum dano ou aumentar a saúde através de poções, alimentos, etc.
+macro.help.event.1002.line9=Cada coração representa 2 niveis de saúde, o nível máximo de saúde é de 20.
+macro.help.event.1002.line10=É possível obter o nível de saúde utilizando a variável &cHEALTH&6.
+macro.help.event.1002.line11=
+
+# Event 1003 (onFoodChange)
+
+macro.help.event.1003.line6=&f<onFoodChange>
+macro.help.event.1003.line7=Este evento ocorrerá sempre que houver alterações na barra de fome.
+macro.help.event.1003.line8=cada ícone de fome, representa 2 pontos de alimentação o valor máximo é de 20.
+macro.help.event.1003.line9=É possível obter o nível atual de fome utilizando a variável &cHUNGER&6.
+macro.help.event.1003.line10=
+macro.help.event.1003.line11=
+
+# Event 1004 (onArmourChange)
+
+macro.help.event.1004.line6=&f<onArmourChange>
+macro.help.event.1004.line7=Este evento ocorrerá sempre que houver alterações em sua armadura.
+macro.help.event.1004.line8=Ex: quando você receber algum dano, ou trocar alguma parte do set.
+macro.help.event.1004.line9=cada ícone de armadura representa 2 pontos da armadura, o valor máximo é de 20.
+macro.help.event.1004.line10=É possível obter o valor atual da armadura, utilizando a variável &cARMOUR&6.
+macro.help.event.1004.line11=
+
+# Event 1005 (onWorldChange)
+
+macro.help.event.1005.line6=&f<onWorldChange>
+macro.help.event.1005.line7=Este evento ocorrerá sempre que houver alterações no mundo dentro do jogo, por exemplo
+macro.help.event.1005.line8=quando viajar para submundos como o Nether e/ou End.
+macro.help.event.1005.line9=Obs:Quando estiver na surpefície natural, o evento tambem ocorrerá.
+macro.help.event.1005.line10=
+macro.help.event.1005.line11=
+
+# Event 1006 (onModeChange)
+
+macro.help.event.1006.line6=&f<onModeChange>
+macro.help.event.1006.line7=Este evento ocorrerá sempre que houver alterações no modo de jogo, por exemplo
+macro.help.event.1006.line8=quando for alterado o modo de sobrevivência para criativo, ou vice-versa.
+macro.help.event.1006.line9=
+macro.help.event.1006.line10=
+macro.help.event.1006.line11=
+
+# Event 1007 (onInventorySlotChange)
+
+macro.help.event.1007.line6=&f<onInventorySlotChange>
+macro.help.event.1007.line7=Este evento ocorrerá sempre que houver alterações em seu inventário atual.
+macro.help.event.1007.line8=O inventário alternativo pode ser acessado, utilizando a variável:
+macro.help.event.1007.line9=&cOLDINVSLOT&6.
+macro.help.event.1007.line10=
+macro.help.event.1007.line11=
+
+# Event 1008 (onOxygenChange)
+
+macro.help.event.1008.line6=&f<onOxygenChange>
+macro.help.event.1008.line7=Este evento ocorrerá sempre que houver alterações no nível de oxigênio.
+macro.help.event.1008.line8=o nível de oxigênio é representado atraves de bolhas que indicam o tempo
+macro.help.event.1008.line9=que você pode ficar dentro d'agua antes de comecar a se afogar.
+macro.help.event.1008.line10=É possível obter o nível de oxigenio, utilizando a variável &cOXYGEN&6.
+macro.help.event.1008.line11=
+
+# Event 1009 (onXPChange)
+
+macro.help.event.1009.line6=&f<onXPChange>
+macro.help.event.1009.line7=Este evento ocorrerá sempre que houver alterações em seu nível de eXP.
+macro.help.event.1009.line8=É possível obter o nível atual de XP, utilizando as variáveis &cTOTALXP&6 e &cXP&6.
+macro.help.event.1009.line9=
+macro.help.event.1009.line10=
+macro.help.event.1009.line11=
+
+# Event 1010 (onLevelChange)
+
+macro.help.event.1010.line6=&f<onLevelChange>
+macro.help.event.1010.line7=Este evento ocorrerá sempre que houver alterações em seu nível.
+macro.help.event.1010.line8=É possível obter o nível atual, utilizando a variável &cLEVEL&6.
+macro.help.event.1010.line9=
+macro.help.event.1010.line10=
+macro.help.event.1010.line11=
+
+# Event 1011 (onItemDurabilityChange)
+
+macro.help.event.1011.line6=&f<onItemDurabilityChange>
+macro.help.event.1011.line7=Este evento ocorrerá sempre que houver alterações no nível de durabilidade de um item.
+macro.help.event.1011.line8=alguns itens possuem durabilidades diferentes de outros
+macro.help.event.1011.line9=e o tempo de desgaste de alguns itens tambem possuem outros valores.
+macro.help.event.1011.line10=É possível obter o nível de durabilidade do item atual, utilizando a variável &cDURABILITY&6.
+macro.help.event.1011.line11=
+
+# Event 1012 (onWeatherChange)
+
+macro.help.event.1012.line6=&f<onWeatherChange>
+macro.help.event.1012.line7=Este evento ocorrerá sempre que houver alterações no clima do jogo.
+macro.help.event.1012.line8=É possível obter a força da chuva utilizando a variável &cRAIN&6
+macro.help.event.1012.line9=
+macro.help.event.1012.line10=
+macro.help.event.1012.line11=
+
+# Event 1013 (onPickupItem)
+
+macro.help.event.1013.line6=&f<onPickupItem>
+macro.help.event.1013.line7=Este evento ocorrerá quando um item for pego pelo jogador.
+macro.help.event.1013.line8=você pode obter a ID do item apanhado utilizando a variável
+macro.help.event.1013.line9=&cPICKUPID&6, ou o nome do item apanhado utilizando a variável
+macro.help.event.1013.line10=&cPICKUPITEM&6, tambem é possível obter o número de itens apanhado
+macro.help.event.1013.line11=utilizando a variável &cPICKUPAMOUNT&6.
+
+# Event 1014 (onPlayerJoined)
+
+macro.help.event.1014.line6=&f<onPlayerJoined>
+macro.help.event.1014.line7=Este evento ocorrerá sempre que um novo jogador acessar o servidor
+macro.help.event.1014.line8=multiplayer. É possível obter o nome do novo jogador utilizando
+macro.help.event.1014.line9=a variável &cJOINEDPLAYER&6.
+macro.help.event.1014.line10=
+macro.help.event.1014.line11=
+
+# Event 1015 (onShowGui)
+
+macro.help.event.1015.line6=&f<onShowGui>
+macro.help.event.1015.line7=Este evento ocorrerá sempre surgir uma interface no Minecraft.
+macro.help.event.1015.line8=É possível obter o nome da classe da interface exibida, utilizando a variável &cGUI&6
+macro.help.event.1015.line9=E quando não for exibida nenhuma interface, a variável deverá ser "NONE".
+macro.help.event.1015.line10=
+macro.help.event.1015.line11=
+
+# Event 1016 (onArmourDurabilityChange)
+
+macro.help.event.1016.line6=&f<onArmourDurabilityChange>
+macro.help.event.1016.line7=Este evento ocorrerá sempre que houver uma alteração na durabilidade da sua armadura.
+macro.help.event.1016.line8=alguns itens possuem durabilidades diferentes de outros
+macro.help.event.1016.line9=e o tempo de desgaste de alguns itens tambem possuem outros valores.
+macro.help.event.1016.line10=
+macro.help.event.1016.line11=
+
+# Event 1017 (onAutoCraftingComplete)
+
+macro.help.event.1017.line6=&f<onAutoCraftingComplete>
+macro.help.event.1017.line7=Este evento ocorrerá sempre que o processo de auto-crafting de um item for concluido.
+macro.help.event.1017.line8=A reação ao concluir um item "craftado" pode ser obtida com a variável
+macro.help.event.1017.line9=&cREASON&6.
+macro.help.event.1017.line10=
+macro.help.event.1017.line11=
+
+# Event 1018 (onConfigChange)
+
+macro.help.event.1018.line6=&f<onConfigChange>
+macro.help.event.1018.line7=Este evento ocorrerá quando a configuração atual for alterada.
+macro.help.event.1018.line8=O nome da nova configuracao estará disponível através da variável &cCONFIG.
+macro.help.event.1018.line9=&c&lObs: que este evento será
+macro.help.event.1018.line10=&c&lcriado em sua &nnova&r &c&lconfiguração e &nnão na antiga!
+macro.help.event.1018.line11=
+
+

@@ -1,0 +1,8 @@
+name: SgLogger
+version: 5.0
+description: Salvar Logs do seu servidor
+author: SARDINHA
+main: br.com.sgcraft.sglogger.Main
+
+commands:
+   logger:

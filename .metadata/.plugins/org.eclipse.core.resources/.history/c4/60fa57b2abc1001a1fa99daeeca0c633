@@ -1,0 +1,105 @@
+package br.com.sgcraft.vender;
+
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+import java.util.ArrayList;
+
+import org.bukkit.Bukkit;
+import org.bukkit.Material;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.inventory.InventoryClickEvent;
+import org.bukkit.inventory.Inventory;
+import org.bukkit.inventory.InventoryHolder;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.PlayerInventory;
+import org.bukkit.inventory.meta.ItemMeta;
+
+import br.com.sgcraft.VaultAPI;
+import br.com.sgcraft.farmsautomaticas.FarmsAutomaticasMain.verificacao;
+
+public class VenderMain implements CommandExecutor, Listener {
+
+	public boolean onCommand(CommandSender sender, Command cmd, String comando, String[] args) {
+		if (!(sender instanceof Player)) {
+
+			Bukkit.getConsoleSender().sendMessage("» Este comando esta desativado no console!");
+			return true;
+		}
+		comando.equalsIgnoreCase("vender");
+		Player p = (Player) sender;
+		if (p.hasPermission("sgcraft.vender")) {
+			Inventory vender = Bukkit.createInventory((InventoryHolder) null, 27, "§8Vendas - Menu Principal");
+			final ItemStack item_lapis = new ItemStack(Material.LAPIS_ORE, 1);
+			final ItemMeta lapis = (ItemMeta) item_lapis.getItemMeta();
+			lapis.setDisplayName("§9Vender Lápis");
+			ArrayList<String> lapis_lore = new ArrayList<>();
+			lapis_lore.add("§eVenda Lápis Lazulli");
+			lapis.setLore(lapis_lore);
+			item_lapis.setItemMeta((ItemMeta) lapis);
+			vender.setItem(11, item_lapis);
+			
+			final ItemStack item_farms = new ItemStack(Material.WHEAT, 1);
+			final ItemMeta farms = (ItemMeta) item_lapis.getItemMeta();
+			farms.setDisplayName("§6Menu de Farms");
+			ArrayList<String> farms_lore = new ArrayList<>();
+			farms_lore.add("§eVender Itens de Farm");
+			farms.setLore(farms_lore);
+			item_farms.setItemMeta((ItemMeta) farms);
+			vender.setItem(13, item_farms);
+			
+			final ItemStack item_drops = new ItemStack(Material.BONE, 1);
+			final ItemMeta drops = (ItemMeta) item_lapis.getItemMeta();
+			drops.setDisplayName("§7Menu de Drops");
+			ArrayList<String> drops_lore = new ArrayList<>();
+			drops_lore.add("§eVender Drops de Mobs");
+			drops.setLore(drops_lore);
+			item_drops.setItemMeta((ItemMeta) drops);
+			vender.setItem(15, item_drops);
+
+			p.openInventory(vender);
+			}
+		else {
+			p.sendMessage("§bApenas jogadores §6§lVIP §bpodem utilizar o /vender!");
+		}
+		return false;
+	}
+	@EventHandler
+	public void farm_cacto(InventoryClickEvent e) {
+		if (e.getWhoClicked() instanceof Player) {
+			Player player = (Player) e.getWhoClicked();
+			if (e.getInventory().getTitle().equals("\"§8Vendas - Menu Principal")) {
+				e.setCancelled(true);
+				if (e.getCurrentItem().getType() == Material.LAPIS_ORE) {
+					double precoLapis = 1.3392857143;
+					int contagem = 0;
+					PlayerInventory inv = player.getInventory();
+					for (ItemStack item : inv.getContents()) {
+						ItemStack inkSack = new ItemStack(Material.INK_SACK, 1, (short) 4);
+						Material matInkSack = inkSack.getType();
+						if (item == null)
+							continue;
+						if (item.getType() == matInkSack) {
+							contagem = contagem + item.getAmount();
+						}
+					}
+					if (contagem == 0) {
+						player.sendMessage("§cVoce nao tem nenhum Lapis Lazulli para vender!");
+					} else {
+						inv.remove(Material.INK_SACK);
+						double precoFinal = contagem * precoLapis;
+						VaultAPI.getEconomy().depositPlayer(player, precoFinal);
+						BigDecimal precoRound = new BigDecimal(precoFinal).setScale(2, RoundingMode.HALF_EVEN);
+						player.sendMessage("§fVoce vendeu " + contagem + " Lapis Lazulli §fpor §aR$ " + precoRound.doubleValue());
+					}
+				} else {
+					player.sendMessage("§cVoce nao tem permissao!");
+				}
+			}
+		}
+	}
+}

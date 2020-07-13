@@ -1,0 +1,32 @@
+package br.com.sgcraft.listeners;
+
+import org.bukkit.entity.EntityType;
+import org.bukkit.entity.Zombie;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.entity.CreatureSpawnEvent;
+
+public class MobsFix implements Listener{
+	@EventHandler
+	public void onCreatureSpawn(CreatureSpawnEvent event) {
+	    if (event.getEntity().getType() == EntityType.ZOMBIE) {
+	        Zombie zombie = (Zombie) event.getEntity();
+	        if(zombie.isBaby()) {
+	            event.setCancelled(true);
+	            zombie.setBaby(false);
+	        }
+
+	    }
+	}
+	@EventHandler
+	public void onCreatureSpawn2(CreatureSpawnEvent event) {
+	    if (event.getEntity().getType() == EntityType.PIG_ZOMBIE) {
+	        Zombie zombie_pig = (Zombie) event.getEntity();
+	        if(zombie_pig.isBaby()) {
+	            event.setCancelled(true);
+	            zombie_pig.setBaby(false);
+	        }
+
+	    }
+	}
+}

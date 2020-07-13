@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<gui xmlns:gc="http://eq2online.net/macros/guiconfiguration">
+    <gc:guilayout name="ingame" rows="4" columns="2">
+        <gc:metrics>
+            <gc:column id="0" width="324" />
+        </gc:metrics>
+        <gc:controls>
+            <gc:textarea name="debug" id="256" x="1" y="0" rowspan="4" />
+        </gc:controls>
+    </gc:guilayout>
+</gui>

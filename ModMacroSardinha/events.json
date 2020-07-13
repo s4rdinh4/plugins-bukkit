@@ -1,0 +1,57 @@
+{
+    "obfuscation":
+    {
+        "methods":
+        [
+            { "id":"drawScreen",        "mcp":"drawScreen",   "srg":"func_73863_a",  "obf":"a" },
+            { "id":"updateScreen",      "mcp":"updateScreen", "srg":"func_73876_c",  "obf":"e" },
+            { "id":"mouseClicked",      "mcp":"mouseClicked", "srg":"func_73864_a",  "obf":"a" },
+            { "id":"drawTextBox",       "mcp":"drawTextBox",  "srg":"func_146194_f", "obf":"g" },
+            { "id":"textboxMouseClick", "mcp":"mouseClicked", "srg":"func_146192_a", "obf":"a" }
+        ],
+        "classes":
+        [
+            { "id":"MacroModCore",      "mcp":"net.eq2online.macros.core.MacroModCore" },
+            { "id":"GuiChat",           "mcp":"net.minecraft.client.gui.GuiChat",    "obf":"bvx" }
+        ]
+    },
+    "descriptors":
+    [
+        { "id":"preChatGuiEvent",   "owner":"${MacroModCore}", "name":"preChatGuiEvent" },
+        { "id":"onChatGuiEvent",    "owner":"${MacroModCore}", "name":"onChatGuiEvent" },
+        { "id":"drawScreen",        "owner":"${GuiChat}",      "name":"${drawScreen}",        "return":"VOID", "args":[ "INT", "INT", "FLOAT" ] },
+        { "id":"updateScreen",      "owner":"${GuiChat}",      "name":"${updateScreen}",      "return":"VOID", "args":[] },
+        { "id":"mouseClicked",      "owner":"${GuiChat}",      "name":"${mouseClicked}",      "return":"VOID", "args":[ "INT", "INT", "INT" ] },
+        { "id":"drawTextBox",       "owner":"${GuiTextField}", "name":"${drawTextBox}",       "return":"VOID", "args":[] },
+        { "id":"textboxMouseClick", "owner":"${GuiTextField}", "name":"${textboxMouseClick}", "return":"VOID", "args":[ "INT", "INT", "INT" ] }
+    ],
+    "events":
+    [
+        {
+            "name":"onDrawChatGui",
+            "injections":[ { "type":"HEAD", "method":"${drawScreen}" } ],
+            "listeners":[ "${preChatGuiEvent}" ]
+        },
+        {
+            "name":"onDrawChatField",
+            "injections":[ { "type":"INVOKE", "method":"${drawScreen}", "target":"after(${drawTextBox})" } ],
+            "listeners":[ "${onChatGuiEvent}" ]
+        },
+        {
+            "name":"onUpdateChatField",
+            "injections":[ { "type":"RETURN", "method":"${updateScreen}" } ],
+            "listeners":[ "${onChatGuiEvent}" ]
+        },
+        {
+            "name":"onTextboxMouseClick", "cancellable":"true",
+            "injections":[ { "type":"INVOKE", "method":"${mouseClicked}", "target":"${textboxMouseClick}" } ],
+            "listeners":[ "${onChatGuiEvent}" ]
+        }
+    ],
+    "accessors":
+    [
+        "net.eq2online.macros.core.overlays.IGuiContainer",
+        "net.eq2online.macros.core.overlays.IGuiContainerCreative",
+        "net.eq2online.macros.core.overlays.IContainerCreative"
+    ]
+}

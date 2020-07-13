@@ -1,0 +1,317 @@
+
+message.enabledsp=&b[MAKROER] Makro support aktivert
+message.autosp=&b[MAKROER] Bruker konfigurasjon &a%s
+message.automp=&b[MAKROER] Bruker konfigurasjon for tjener &a%s
+
+options.title=Makroinnstillinger
+options.selectconfig=Velg konfigurasjon
+options.option.title=Innstillinger
+options.option.general=Generelle Innstillinger
+options.option.enableoverride=Aktiver&b Marko Overskrivelses&f funksjonen
+options.option.enableoverridechat=Tillat &boverskrivelses &ffunksjonen i chat GUIen
+options.option.enableautoswitch=Automatisk bytting
+options.option.discovery=Automatisk søk for innstillinger
+options.option.waitforhomecount=Vent på Hjemtelling. (Mere pålitelig)
+options.option.commandhomelist=&bHjemliste &fkommando
+options.option.commandtownlist=&bByliste &fkommando
+options.newconfig.title=Ny konfigurasjon
+options.newconfig.prompt=Skriv inn navn på ny konfigurasjon
+options.newconfig.prompt2=Bruk nåværende tjeneradresse
+options.newconfig.option=Kopier nåværende konfigurasjon
+options.defaultconfig=Standard Konfigurasjon
+options.addconfig=&7<Ny konfigurasjon>
+
+gui.auto=Auto
+gui.add=Legg til
+gui.save=Lagre
+gui.yes=Ja
+gui.no=Nei
+gui.ok=OK
+gui.cancel=Avbryt
+gui.create=Lag
+gui.icon=Ikon
+gui.copy=Kopier
+gui.move=Flytt
+gui.delete=Slett
+gui.edit=Rediger
+gui.importall=<< Importer alle
+gui.refresh=Oppdater
+gui.buttonopts=Tastepanel-kommandoer
+
+macro.bind.title=Makro bindinger
+macro.edit.title=Rediger Makro
+macro.currentconfig=Konfigurasjon: &f%s
+macro.config.global=Alle konfigurasjoner
+macro.prompt.execute=<Trykk en makrotast for å utføre>
+macro.prompt.edit=<Velg en tast å rediger>
+macro.prompt.bind=Rediger makrobinding for &f%s
+macro.keyname.control=Control
+macro.keyname.alt=Alt
+macro.keyname.shift=Shift
+macro.option.title=Innstillinger
+macro.option.inhibit=Ikke husk parametere
+macro.option.global=Velg for alle konfigurasjoner
+macro.action.title=Handlinger
+macro.action.editfile=Rediger fil...
+macro.help.title=Hjelp
+
+macro.help.line1=Skiv inn en makro under, separer kommandoer med pipe "|"
+macro.help.line2=feks.&c /give Spiller 123|/give Spiller 456
+
+macro.help.line3=Bruk&c $$<file.txt> &6for å inkludere en makrofil eller&c $$m &6for å spørre etter en fil
+macro.help.line4=Bruk&c $$? &6eller&c $$[navn] &6for å spørre etter et innslag
+macro.help.line5=Bruk &c$$0&6-&c$$9 &6for å spørre etter en liste
+macro.help.line6=Bruk &c$$i &6for å spørre etter et item, &c$$i:d &6for items med skadeverdi
+macro.help.line7=Bruk &c$$t &6for å spørre etter en by, &c$$w &6for å spørre etter en warp
+macro.help.line8=Bruk &c$$f &6for å spørre etter en venn, &c$$u &6for å spørre etter
+macro.help.line9=Bruk &c$$h &6for å spørre etter et hjem, &c$$p &6for å spørre etter en plass (koordinater)
+macro.help.line10=Bruk &c$$! &6for å ende en makro, og la navigatøren stå igjen
+macro.help.line11=Lukk skript med &c$${&6 og &c}$$&6
+
+macro.help.line12=Sjekk modifikatorene du vil velge for denne makroen
+macro.help.line13=Denne makroen vil kun bli utført når
+macro.help.line14=du holder de valgte knappene
+
+macro.help.inhibit=For å forhindre parametere å bli husket hver gang
+macro.help.global=For å bruke denne makroen i alle konfigurasjoner
+
+param.prompt.param=Skriv inn&e%s&c parameter for <&e%s&c>
+param.prompt.inner=Skriv inn det %s indre&e%s&c parameteret for <&e%s&c>
+param.prompt.named=Skiv inn navngitt parameter for <&e%s&c>
+param.prompt.item=Skriv inn item-nummer for <&e%s&c>
+param.prompt.town=Skriv inn bynavn for <&e%s&c>
+param.prompt.home=Skriv inn hjem-navn for <&e%s&c>
+param.prompt.person=Skriv %s navn for <&e%s&c>
+param.prompt.friend=venn
+param.prompt.user=bruker
+param.prompt.list=Velg en innstilling for <&e%s&c>
+
+param.action.confirmdelete=Er du sikker på at du vil slette
+param.action.confirmdeletefile=Er du sikker på at du vil slette filen
+
+list.new.file=&7<Ny Fil>
+list.new.friend=&7<Ny Venn>
+list.new.home=&7<Nytt Hjem>
+list.new.town=&7<Ny By>
+list.new.preset=&7<Nytt tekstfelt>
+list.prompt.preset=Fyll inn tekst
+
+editor.choosefile=Velg fil for redigering:
+editor.createnewfile=Opprett en ny fil:
+editor.editing=Redigerer &s
+
+entry.newentry=Nytt innlegg:
+entry.newfriend=Ny venn:
+entry.newtown=Ny by:
+entry.newhome=Nytt hjem:
+entry.newfile=Ny fil:
+entry.editentry=Endre innlegg:
+entry.editfriend=Endre venn:
+entry.edittown=Endre by:
+entry.editgome=Endre hjem:
+entry.chooseicon=Velg ikon:
+
+query.wait=Synkroniserer med tjener, vennligst vent...
+query.failed=Synkronisering returnerte 0 resultat
+query.results=Synkroniserings-resultat:
+
+list.new.place=&7<Ny plass>
+entry.newplace=Ny plass:
+entry.editplace=Endre plass:
+entry.usemylocation=<< Bruk nåværende posisjon
+macro.mode.normal=Normal Makro
+macro.mode.keystate=Statusmakro
+macro.mode.conditional=Tilstandsmakro
+
+macro.prompt.edit.simple=<Trykk en makrotast for å redigere>
+macro.prompt.keydown=Tast Ned
+macro.prompt.keyheld=Tast Holdt
+macro.prompt.keyup=Tast Opp
+macro.prompt.repeatrate=Repeteringsmellomrom (ms)
+
+macro.help2.line1=Statusmakroer tillater deg å binde flere makroer til &ctast
+macro.help2.line2=&copp&6, &ctast ned&6 og &ctast holdt&6. Du kan ikke inkludere parametere
+macro.help2.line3=i denne typen makro, men du kan inkudere filer ved å bruke &c$$<fil.txt>
+macro.help2.line4=Du kan inkludere skript i makroene dine, men funksjoner
+macro.help2.line5=som &cWAIT&6 og &cLOOP&6 vil ikke fungere under &ctast holdt&f.
+
+script.error.stack=Skript terminert med en ukollapsert stabel, sjekk skript-syntaxen din
+script.error.context=Feil sammenhengsbytting i skript
+script.error.stackoverflow=Overfylt stabel i skript
+
+options.option.alwaysgoback=Returner til bindingsskjerm
+options.option.optionsfirst=Vis innstillinger istedetfor hjelp
+options.option.simple=Bruk enkle GUI skjermer
+options.option.runstatus=Overskrivningsskjerm viser makrostatus
+options.option.configs=Konfigurasjonsinnstillinger
+options.option.configs.use=Bruk per-konfigurasjonsinnstillinger for:
+options.option.configs.friends=Venneliste
+options.option.configs.homes=Hjemliste
+options.option.configs.towns=Byliste
+options.option.configs.warps=Warpliste
+options.option.configs.places=Plassliste
+options.option.configs.presets=Forinnstilt Liste
+options.option.commandwarplist=&bWarpliste &fkommando
+options.option.commandwarplist2=&bWarpliste &fekstra sider kommando
+options.option.commandwarplist2help=&7Bruk &b%s &7for side nummer
+options.option.advanced=Avanserte Innstillinger
+options.option.reserved=Rediger Reserverte Taster
+
+param.prompt.warp=Skriv inn warpnavn for <&e%s&c>
+list.new.warp=&7<Ny Warp>
+entry.newwarp=Ny warp:
+entry.editwarp=Rediger warp:
+
+macro.option.inhibit.simple=Ingen Parametere
+macro.option.global.simple=Global
+
+macro.hover.empty=&8<Tom>
+
+gui.options=Endre innstillinger...
+
+options.option.directmode=Gi tilgang til bindingsmeny uten &bsnik
+options.option.compatibilitymode=Kompatibilitetsmodus (krever restart)
+options.option.disabledeepinject=Skru av dyp injeksjon
+options.option.keyboardedit=Redigerbart tastaturoppsett
+options.option.debug=Aktiver debugging informasjon
+options.option.chathistory=Opphold sendte meldinger i lokal historie
+
+entry.displayname=Visningsnavn
+
+message.usingpack=&b[MAKROER] Bruker overflatepakke &a%s
+message.badpack=&b[MAKROER] Feilet å matche overflatepakke til &a%s
+message.failedpack=&b[MAKROER] Feil ved lasting av overflatepakke for &a%s&b. Bytter tilbake til standard.
+
+script.error.nosign=&cDu har ikke et skilt i din aktive inventar
+
+macro.help.always=For å tvinge denne makroen å overskrive kolliderende tastbindinger
+macro.option.always=Alltid overskriv kolliderende tastbindinger
+macro.option.always.simple=Forsterk Ovr
+
+macro.hover.overlay=Nåværende overskriving av &a%s
+
+message.config=&b[MAKROER] Bruker konfigurasjon &a%s
+message.overlay.add=&b[MAKROER] Importerte konfiguasjon &a%s
+message.overlay.remove=&b[MAKROER] Skrudde av importert konfigurasjon &a%s
+
+tooltip.options=Innstillinger
+tooltip.editfile=Tekstredigering
+tooltip.icons=Behandle Ikoner
+tooltip.bind=Rediger tastbindinger
+tooltip.guiedit=GUI Redigering
+tooltip.perms=Vis Tilganger
+
+macro.icons.title=Ikonbehandler
+macro.icons.help=Klikk på et ikon for å ta et skjermbilde
+macro.icons.town=By-ikoner:
+macro.icons.homes=Hjem-ikoner:
+
+thumbnail.help.hint1=Still inn forhåndsvisningen under, deretter trykk på musen
+thumbnail.help.hint2=eller trykk RETUR for å lagre forhåndsvisningen.
+
+editor.title=Rediger Tekstfil
+
+options.option.animation=Bruk GUI animasjon
+options.option.rememberpage=Husk sist brukte &bbindingsskjerm
+
+macro.prompt.edit.event=<Velg en handling for redigering>
+macro.prompt.edit.button=<Velg en tast for redigering>
+macro.prompt.edit.buttons=<Venstreklikk for å redigere bindinger, høyreklikk for å ende innstillinger>
+macro.prompt.edit.unknown=&4<Hjelpeteskt ikke tilgjengelig>
+
+editor.rename=Endre Filnavn
+editor.rename.prompt=Fyll inn et nytt navn for filen
+editor.savechanges=Ønsker du å lagre endringene i filen
+editor.title.minimise=Minimer Redigeringsverktøy
+editor.prompt.minimise=Dette vil minimere redigeringsverktøyet
+editor.prompt.saveonmin=Ønsker du å lagre filen først?
+editor.prompt.remember=Alltid utfør dette
+
+firstrun.title=Makro / Tastbindings-mod innstallasjonen er fullført
+firstrun.line1=Gratulerer!
+firstrun.line2=&eMakro / Tastbindings-mod&6en lastet opp uten feil.
+firstrun.line3=Det anbefales at du konfigurerer &eMakro Overskriving
+firstrun.line4=og &eMakro Aktiver&6 tastene i Minecraft &eKontrollere&6 skjermen. Klikk
+firstrun.line5=&eKonfigurer Taster&6 for å gjøre dette nå. 
+firstrun.line6=Om du ønsker å bytte tastene, kan du gjøre dette til enhver tid
+firstrun.line7=ved å velge &eInnstillinger&6 -> &eKontrollere&6 fra hovedmenyen.
+firstrun.yes=Konfigurer Taster
+firstrun.no=Avbryt
+
+options.option.largebuttons=Viser store taster på bindingsmenyen
+options.option.showslots=Viser beholder-ID i konteinere
+options.option.autoscale=Skaler tastatur til å fylle skjermen
+
+control.properties.title=Innstillinger for %s
+control.properties.name=Kontrollnavn
+control.properties.button.hide=Skjul når ubundet
+control.properties.button.text=Visningstekst
+control.properties.button.sticky=Ikke lukk GUIen ved klikk
+
+control.delete.title=slett kontroll
+control.delete.line1=Er du sikker på at du vil slette
+
+grid.properties.title=Rutenett-innstillinger
+grid.properties.rows=Rekker
+grid.properties.cols=Kolonner
+grid.properties.colWidth=Kolonnebredde
+
+macro.prompt.condition=Tilstand
+macro.prompt.condtrue=Om sann
+macro.prompt.condfalse=Om falsk
+
+macro.help3.line1=Tilstandsmakroer tillater deg å utføre forskjellige makroer basert
+macro.help3.line2=på en valgt tilstand. Dette er kraftigere enn å bruke
+macro.help3.line3=&cIF&6/&cELSE&6 fordi tilstanden er sjekket &nfør&r makroen
+macro.help3.line4=blir komprimert. Dette tillater deg å bruke forskjellige parametere i hver
+macro.help3.line5=makro.
+macro.help3.line6=Du kan bruke alle typer parametere i en tilstandsmakro som
+macro.help3.line7=er tillat i &cnormale&6 makroer.
+
+startuperrors.title=Feil oppdaget ved oppstart
+startuperrors.line1=&eMakro / Tastbindings-mod&6 oppdaget følgende feil ved oppstart
+
+options.option.extra=Ekstra Innstillinger
+options.option.chathidden=Skjul Minecraft chat
+
+control.properties.label.text=Klistrelapptekst
+control.properties.label.binding=Binding
+control.properties.forecolour=Forgrunnsfarge
+control.properties.backcolour=Bakgrunnsfarge
+
+control.properties.label.align=Tekstjustering
+control.properties.label.align.topleft=Topp Venstre
+control.properties.label.align.topcentre=Topp Senter
+control.properties.label.align.topright=Topp Høyre
+control.properties.label.align.middleleft=Midt Venstre
+control.properties.label.align.middlecentre=Midt Senter
+control.properties.label.align.middleright=Midt Høyre
+control.properties.label.align.bottomleft=Bunn Venstre
+control.properties.label.align.bottomcentre=Bunn Senter
+control.properties.label.align.bottomright=Bunn Høyre
+
+options.option.spamfilter=Oversvømmelsesbeskyttelsesinnstillinger
+options.option.spamfilter.enable=Aktiver &boversvømmelsesbeskyttelse
+options.option.spamfilter.style=Oversvømmelsesbeskyttelsestype
+options.option.spamfilter.queuesize=Maksimum &bKø&f størrelse
+
+options.option.simpleoverride=Liten &boverskrivingskaller
+
+time.now=nå
+time.never=aldri
+
+macro.permissions.title=Vis Tilganger
+macro.permissions.banner=Sist oppdatert &f%s
+macro.permissions.script.title=Nektede skript-kommandoer
+macro.permissions.script.info1=Følgende kommandoer er foreløpig avskrudd grunnet tjenerens tilganger:
+macro.permissions.option.scriptwarnings=Generer advarsler når en kommando er avskrudd
+macro.permissions.gui.refresh=Tving oppdatering
+
+script.error.denied=%s ble nektet av tjeneren
+
+param.option.replaceall=Bytt ut alle samhandlinger
+editor.option.help=Vis kommandohjelp
+
+control.properties.textarea.lifespan=Meldingsliv
+options.option.textboxhighlight=Vis syntax-opplysning i tekstfelt
+control.properties.text.shadow=Skygge

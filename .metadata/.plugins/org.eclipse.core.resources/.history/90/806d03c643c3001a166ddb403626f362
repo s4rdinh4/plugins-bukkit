@@ -1,0 +1,15 @@
+name: SgCraftEss
+author: Sardinhagamer_HD
+version: 5.0
+main: br.com.sgcraft.Main
+
+commands:
+  desencantar: 
+  anunciar:  
+  x9:
+  buff:
+  vender:
+  farms:
+  cactocontinuar:
+  cactoconstruir:
+  limparchat:

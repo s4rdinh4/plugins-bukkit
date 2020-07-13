@@ -1,0 +1,10 @@
+name: SgCraftAnunciar
+version: Beta
+author: [Sardinhagamer_HD]
+main: br.com.sgcraft.Anunciar.Main
+
+
+commands:
+    
+    anunciar:
+     description: Mandar uma mensagem no chat de anuncio.

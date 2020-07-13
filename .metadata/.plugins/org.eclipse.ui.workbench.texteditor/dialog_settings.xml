@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="true"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="true"/>
+		<item key="isRegEx" value="false"/>
+		<item key="selection" value="Pepita"/>
+		<list key="findhistory">
+			<item value="Cacto"/>
+			<item value="Melancia"/>
+			<item value="Abobora"/>
+			<item value="Batata"/>
+			<item value="Cana"/>
+			<item value="Fungo"/>
+			<item value="cacto"/>
+			<item value="melancia"/>
+			<item value="abobora"/>
+			<item value="batata"/>
+			<item value="cenoura"/>
+			<item value="cana"/>
+			<item value="fungo"/>
+			<item value="menu_farms"/>
+			<item value="&apos;"/>
+		</list>
+		<list key="replacehistory">
+			<item value="Pepita"/>
+			<item value="Slime"/>
+			<item value="Prismarinho"/>
+			<item value="Linha"/>
+			<item value="Osso"/>
+			<item value="CarnePodre"/>
+			<item value="pepita"/>
+			<item value="slime"/>
+			<item value="prismarinho"/>
+			<item value="cenoura"/>
+			<item value="linha"/>
+			<item value="osso"/>
+			<item value="carnePodre"/>
+			<item value="menu_drops"/>
+			<item value="Cacto"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="622"/>
+		<item key="DIALOG_Y_ORIGIN" value="121"/>
+		<item key="DIALOG_WIDTH" value="284"/>
+		<item key="DIALOG_HEIGHT" value="391"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>

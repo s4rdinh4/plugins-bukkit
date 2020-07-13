@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;logan.pvpdisabler.src&apos; to &apos;br.com.sgcraft.pvpvip&apos;&#x0D;&#x0A;- Original project: &apos;SgCraftPVP&apos;&#x0D;&#x0A;- Original element: &apos;SgCraftPVP/src/logan.pvpdisabler.src&apos;&#x0D;&#x0A;- Renamed element: &apos;SgCraftPVP/src/br.com.sgcraft.pvpvip&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;logan.pvpdisabler.src&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;logan.pvpdisabler.src" name="br.com.sgcraft.pvpvip" qualified="false" references="true" stamp="1590020337427" textual="false" version="1.0"/>
+</session>

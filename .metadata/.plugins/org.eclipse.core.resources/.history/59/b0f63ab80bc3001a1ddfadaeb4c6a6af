@@ -1,0 +1,75 @@
+package br.com.sgcraft.vender;
+
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
+import org.bukkit.Material;
+import org.bukkit.Sound;
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.inventory.InventoryClickEvent;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.PlayerInventory;
+
+import br.com.sgcraft.VaultAPI;
+
+public class VenderFarms implements Listener {
+
+	@EventHandler
+	public void OnSubControls(InventoryClickEvent e) {
+		if (e.getWhoClicked() instanceof Player) {
+			Player player = (Player) e.getWhoClicked();
+			if (e.getInventory().getTitle().equals("§8Vendas - Itens de Farm")) {
+				e.setCancelled(true);
+				ItemStack itemOpt = e.getCurrentItem();
+				switch (itemOpt.getItemMeta().getDisplayName()) {
+				case "§cVender Fungo":
+					player.playSound(player.getLocation(), Sound.CLICK, 1f, 1f);
+					PlayerInventory inv = player.getInventory();
+					double precoFungo = 2.8211805556;
+					int contagem = 0;
+
+					for (ItemStack item : inv.getContents()) {
+							if (item == null)continue;
+							if (item.getType() == Material.NETHER_STALK) {
+								contagem = contagem + item.getAmount();
+							}
+							
+						}
+					if (contagem == 0) {
+						player.sendMessage("§cVoce nao tem nenhum Fungo do Nether para vender!");
+						player.playSound(player.getLocation(), Sound.VILLAGER_NO, 1f, 1f);
+					} else {
+						inv.remove(Material.NETHER_STALK);
+						double precoFinal = contagem * precoFungo;
+						VaultAPI.getEconomy().depositPlayer(player, precoFinal);
+						BigDecimal precoRound = new BigDecimal(precoFinal).setScale(2, RoundingMode.HALF_EVEN);
+						player.sendMessage("§fVoce vendeu " + contagem + " Fungos do Nether §fpor §aR$ " + precoRound.doubleValue());
+						player.playSound(player.getLocation(), Sound.VILLAGER_YES, 1f, 1f);
+					}
+					break;
+				case "§aVender Cana-de-Açucar":
+					player.sendMessage("Mas Bah, isto e uma cana");
+					break;
+				case "§6Vender Cenoura":
+					player.sendMessage("Cueio");
+					break;
+				case "§eVender Batata":
+					player.sendMessage("Cueio");
+					break;
+				case "§6Vender Abobora":
+					player.sendMessage("Cueio");
+					break;
+				case "§2Vender cacto":
+					player.sendMessage("Cueio");
+					break;
+				
+				default:
+					return;
+				}
+
+			}
+		}
+	}
+}

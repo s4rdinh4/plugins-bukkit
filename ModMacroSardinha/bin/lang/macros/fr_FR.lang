@@ -1,0 +1,177 @@
+
+message.enabledsp=&b[MACROS] Support des Macros activé
+message.autosp=&b[MACROS] Utiliser la config &a%s
+message.automp=&b[MACROS] Utiliser la config du serveur &a%s
+
+options.title=Options des macro
+options.selectconfig=Sélectionnez la configuration 
+options.option.title=Options
+options.option.general=Paramètres généraux
+options.option.enableoverride=Activer le&b Macro "Override"&f fonction
+options.option.enableautoswitch=Changer automatiquement
+options.option.discovery=Auto-découverte des paramètres
+options.option.waitforhomecount=Attendre pour compter les homes (plus fiable)
+options.option.commandhomelist=&bHome List &fcommand
+options.option.commandtownlist=&bTown List &fcommand
+options.newconfig.title=Ajouter Configuration
+options.newconfig.prompt=Entrez un nom pour la nouvelle configuration
+options.newconfig.prompt2=Utiliser l'adresse du serveur actuel
+options.newconfig.option=Copier la configuration actuelle
+options.defaultconfig=Configuration par Default
+options.addconfig=&7<Ajouter configuration>
+
+gui.auto=Auto
+gui.add=Ajouter
+gui.save=Enregistrer
+gui.yes=oui
+gui.no=Non
+gui.ok=OK
+gui.cancel=Annuler
+gui.create=Créer
+gui.icon=Icône
+gui.copy=Copier
+gui.move=Déplacer
+gui.delete=Supprimer
+gui.edit=Modifier
+gui.importall=<< Importer tout
+gui.refresh=Actualiser
+
+macro.bind.title=Association de macro
+macro.edit.title=Modifier Macro
+macro.currentconfig=Config: &f%s
+macro.config.global=Toutes les configurations
+macro.prompt.execute=<Appuyer sur une touche macro pour executer>
+macro.prompt.edit=<Appuyer sur une touche macro pour modifier ou cliquez sur une ci-dessus>
+macro.prompt.bind=Modifier le macro pour &f%s
+macro.keyname.control=Ctrl
+macro.keyname.alt=Alt
+macro.keyname.shift=Shift
+macro.option.title=Options
+macro.option.inhibit=Ne pas se souvenir des paramètres
+macro.option.global=Appliquer à toutes les configurations
+macro.action.title=Actions
+macro.action.editfile=Editer le fichier ...
+macro.help.title=Aide
+macro.help.line1=Entrez votre macro ci-dessous, séparé les commandes multiples avec des barres verticales "|"
+macro.help.line2=eg.&c /give Player 123|/give Player 456¬
+macro.help.line3=Use&c $$<file.txt> &6Pour utiliser un fichier macro ou&c $$m &6Pour insèrer un fichier
+macro.help.line4=Use&c $$? &6or&c $$[nom] &6to prompt for an input
+macro.help.line12=Vérifier les modifications que vous souhaitez appliquer à ce macro
+macro.help.line13=Le macro ne sera exécutée que lorsque vous maintenez les
+macro.help.line14=touches spécifiées
+macro.help.inhibit=Pour prévenir les paramètres entrés doivent être retaper à chaque fois
+macro.help.global=Pour utiliser cette macro pour toutes les configurations
+
+param.prompt.param=Entrer&e%s&c parametres pour <&e%s&c>
+param.prompt.inner=Entrer le %s inner&e%s&c parametres pour <&e%s&c>
+param.prompt.named=Entrer le nom du parametre pour <&e%s&c>
+param.prompt.item=Entrer l'ID de l'objet pour <&e%s&c>
+param.prompt.town=Entrer le nom de la ville pour <&e%s&c>
+param.prompt.home=Entrer le nom du home pour <&e%s&c>
+param.prompt.person=Entrer %s nom pour <&e%s&c>
+param.prompt.friend=ami
+param.prompt.user=utilisateur
+
+param.action.confirmdelete=Etes-vous sûr de vouloir supprimer
+param.action.confirmdeletefile=Etes-vous sûr de vouloir supprimer le fichier
+
+list.new.file=&7<Nouveau fichier>
+list.new.friend=&7<Ajouter ami>
+list.new.home=&7<Ajouter home>
+list.new.town=&7<Ajouter Vile>
+list.new.preset=&7<Ajouter du texte>
+list.prompt.preset=Tapez du texte
+
+editor.choosefile=Choisir un fichier à éditer
+editor.createnewfile=Créer un nouveau fichier:
+editor.editing=modifier %s
+
+entry.newentry=Nouvelle entrée:
+entry.newfriend=Nouveau ami:
+entry.newtown=Nouvelle ville:
+entry.newhome=Nouvelle maison:
+entry.newfile=Nouveau dossier:
+entry.editentry=Modifier entrée:
+entry.editfriend=Modifier ami:
+entry.edittown=Modifier la ville:
+entry.editgome=Modifier la maison:
+entry.chooseicon=Choisir une icône:
+
+query.wait=Interrogation du serveur veuillez patienter ...
+query.failed=La requète à donnée 0 résultat
+query.results=résultat de la requète:
+
+list.new.place=&7<Ajouter Place>
+entry.newplace=Nouveau lieu:
+entry.editplace=Modifier lieu:
+entry.usemylocation=<< Utiliser coords actuelle
+macro.mode.normal=Macro Normal
+macro.mode.keystate=Touche macro Etat
+
+macro.prompt.edit.simple=<Appuyer une touche macro pour editer>
+macro.prompt.keydown=Enfoncée
+macro.prompt.keyheld=Maintenue
+macro.prompt.keyup=Relevée
+macro.prompt.repeatrate=Delai de répétition (ms)
+
+macro.help2.line1=Les macro d'état vous permettent d'associer des macro séparés a la &ctouche
+macro.help2.line2=&cup&6, &ctouche enfoncée&6 et &ctouche maintenue&6 . Vous ne pouvez pas inclure des paramètres
+macro.help2.line3=dans ce type de macro, mais vous pouvez inclure des fichiers en utilisant &c$$<file.txt>¬
+macro.help2.line4= Vous pouvez inclure des scripts dans vos macros, mais certaines comme
+macro.help2.line5=&cWAIT&6 et &cLOOP&6 ne fonctionneront pas avec les commandes &ctouches maintenues&6.
+
+script.error.stack=Script terminé avec des erreurs, vérifiez votre syntaxe de script
+script.error.context=changement de contexte non valide dans le script
+script.error.stackoverflow=débordement de stack dans le script
+
+options.option.alwaysgoback=Retourner à l'écran d'association
+options.option.optionsfirst=Afficher Options avant Aide
+options.option.simple=Utiliser l'interface simple
+options.option.runstatus=Override screen shows macro status
+options.option.configs=Paramètres de configuration
+options.option.configs.use=Utilisation par les paramètres de config pour:
+options.option.configs.friends=Liste d'amis
+options.option.configs.homes=Liste des Homes
+options.option.configs.towns=Liste des Villes
+options.option.configs.warps=Liste des Warps
+options.option.configs.places=Liste des lieux
+options.option.configs.presets=Liste préréglages
+options.option.commandwarplist=&bWarp List &fcommandes
+options.option.commandwarplist2=&bWarp List &fpages additionnel
+options.option.commandwarplist2help=&7Use &b%s &7for page number
+options.option.advanced=Paramètres avancés
+options.option.reserved=Modifier touches réservés 
+
+param.prompt.warp=Entrer nom du warp pour <&e%s&c>
+list.new.warp=&7<Ajouter Warp>
+entry.newwarp=Nouveau warp:
+entry.editwarp=Modifier warp:
+
+macro.option.inhibit.simple=Pas de Params
+macro.option.global.simple=Global
+
+macro.hover.empty=&8<Vide>
+
+gui.options=Changer options...
+
+macro.help.line5=- &c$$0&6-&c$$9 &6Pour insérer un texte prédéfini
+macro.help.line6=- &c$$i &6pour insérer un objet, &c$$p &6pour insérer un lieu
+macro.help.line7=- &c$$t &6pour insérer une ville, &c$$w &6pour insérer un warp
+macro.help.line8=- &c$$f &6pour insérer un ami, &c$$u &6pour insérer un joueur online
+macro.help.line9=- &c$$h &6pour insérer un home.
+macro.help.line10=- &c$$! &6Pour finir un macro et laisser le curseur en place
+macro.help.line11=Fermer les scripts avec &c$${&6 et &c}$$&6
+
+options.option.directmode=Accedez au Menu sans &bsneak
+options.option.compatibilitymode=Mode Compatible (Redémarrage requis)
+options.option.keyboardedit=Configuration de clavier modifiable
+options.option.debug=Activer information de débuggage
+
+entry.displayname=Nom d'affichage
+
+message.usingpack=&b[MACROS] Utiliser Texture pack : &a%s
+message.badpack=&b[MACROS] Échec de faire correspondre le pack de texture pour &a%s
+message.failedpack=&b[MACROS] Erreur de chargement de pack de texture pour &a%s&b. Retour au par défaut.
+
+
+script.error.nosign=&cVous n'avez pas de pancarte dans votre inventaire

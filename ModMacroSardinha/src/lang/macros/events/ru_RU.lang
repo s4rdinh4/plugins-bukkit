@@ -1,0 +1,175 @@
+macro.help.event.line3=Вы редактируете &cмакрос события&6. Этот тип макроса не принимает
+macro.help.event.line4=пользовательские параметры. Можно включать файлы, используя&c $$<file.txt>
+macro.help.event.line5=или заключить в сценарии &c$${&6 и &c}$$&6¬
+
+# Event 1000 (onJoinGame)
+
+macro.help.event.1000.line6=&f<onJoinGame>
+macro.help.event.1000.line7=Событие происходит, когда вы заходите в игру (Одиночную или в
+macro.help.event.1000.line8=сеть). Можете использовать для выполнения команд при входе на сервер.
+macro.help.event.1000.line9=
+macro.help.event.1000.line10=
+macro.help.event.1000.line11=
+
+# Event 1001 (onChat)
+
+macro.help.event.1001.line6=&f<onChat>
+macro.help.event.1001.line7=Событие происходит при получении сообщения от сервера
+macro.help.event.1001.line8=Вы можете получить доступ к принятому сообщению
+macro.help.event.1001.line9=используя переменную &cCHAT&6.
+macro.help.event.1001.line10=
+macro.help.event.1001.line11=
+
+# Event 1002 (onHealthChange)
+
+macro.help.event.1002.line6=&f<onHealthChange>
+macro.help.event.1002.line7=Событие происходит, когда ваше здоровье изменяется.
+macro.help.event.1002.line8=Например при повреждении, или же при питании или использовании зелий.
+macro.help.event.1002.line9=Переменная &cHEALTH&6
+macro.help.event.1002.line10=
+macro.help.event.1002.line11=
+
+# Event 1003 (onFoodChange)
+
+macro.help.event.1003.line6=&f<onFoodChange>
+macro.help.event.1003.line7=Событие при изменении уровня голода.
+macro.help.event.1003.line8=Переменная &cHUNGER
+macro.help.event.1003.line9=
+macro.help.event.1003.line10=
+macro.help.event.1003.line11=
+
+# Event 1004 (onArmourChange)
+
+macro.help.event.1004.line6=&f<onArmourChange>
+macro.help.event.1004.line7=Событие при изменении уровня брони.
+macro.help.event.1004.line8=Перемення &cARMOUR&6 
+macro.help.event.1004.line9=
+macro.help.event.1004.line10=
+macro.help.event.1004.line11=
+
+# Event 1005 (onWorldChange)
+
+macro.help.event.1005.line6=&f<onWorldChange>
+macro.help.event.1005.line7=Событие при смене мира. Возникает при путешествиях 
+macro.help.event.1005.line8=из мира в мир.
+macro.help.event.1005.line9=
+macro.help.event.1005.line10=
+macro.help.event.1005.line11=
+
+# Event 1006 (onModeChange)
+
+macro.help.event.1006.line6=&f<onModeChange>
+macro.help.event.1006.line7=Событие при смене игрового режима
+macro.help.event.1006.line8=
+macro.help.event.1006.line9=
+macro.help.event.1006.line10=
+macro.help.event.1006.line11=
+
+# Event 1007 (onInventorySlotChange)
+
+macro.help.event.1007.line6=&f<onInventorySlotChange>
+macro.help.event.1007.line7=Событие при изменении определенного слота инвентаря. 
+macro.help.event.1007.line8=Переменная &cOLDINVSLOT&6
+macro.help.event.1007.line9=
+macro.help.event.1007.line10=
+macro.help.event.1007.line11=
+
+# Event 1008 (onOxygenChange)
+
+macro.help.event.1008.line6=&f<onOxygenChange>
+macro.help.event.1008.line7=Событие происходит, когда уровень кислорода меняется
+macro.help.event.1008.line8=Переменная &cOXYGEN&6 
+macro.help.event.1008.line9=
+macro.help.event.1008.line10=
+macro.help.event.1008.line11=
+
+# Event 1009 (onXPChange)
+
+macro.help.event.1009.line6=&f<onXPChange>
+macro.help.event.1009.line7=Событие при изменении уровня опыта
+macro.help.event.1009.line8=Переменные &cTOTALXP&6 и &cXP&6
+macro.help.event.1009.line9=
+macro.help.event.1009.line10=
+macro.help.event.1009.line11=
+
+# Event 1010 (onLevelChange)
+
+macro.help.event.1010.line6=&f<onLevelChange>
+macro.help.event.1010.line7=Событие при смене уровня прокачки персонажа
+macro.help.event.1010.line8=Переменная &cLEVEL&6
+macro.help.event.1010.line9=
+macro.help.event.1010.line10=
+macro.help.event.1010.line11=
+
+# Event 1011 (onItemDurabilityChange)
+
+macro.help.event.1011.line6=&f<onItemDurabilityChange>
+macro.help.event.1011.line7=Событие происходит, когда прочность инструмента меняется
+macro.help.event.1011.line8=переменная &cDURABILITY&6
+macro.help.event.1011.line9=
+macro.help.event.1011.line10=
+macro.help.event.1011.line11=
+
+# Event 1012 (onWeatherChange)
+
+macro.help.event.1012.line6=&f<onWeatherChange>
+macro.help.event.1012.line7=Событие происходит при смене погоды
+macro.help.event.1012.line8=Переменная &cRAIN&6
+macro.help.event.1012.line9=
+macro.help.event.1012.line10=
+macro.help.event.1012.line11=
+
+# Event 1013 (onPickupItem)
+
+macro.help.event.1013.line6=&f<onPickupItem>
+macro.help.event.1013.line7=Событие при поднятии предмета.
+macro.help.event.1013.line8=Вы можете узнать ID предмета с помощью переменной
+macro.help.event.1013.line9=&cPICKUPID&6 , имя предмета, используя переменную
+macro.help.event.1013.line10=&cPICKUPITEM&6 и количество подобранных предметов
+macro.help.event.1013.line11=используя &cPICKUPAMOUNT&6 
+
+# Event 1014 (onPlayerJoined)
+
+macro.help.event.1014.line6=&f<onPlayerJoined>
+macro.help.event.1014.line7=Событие, когда новый игрок заходит на сервер.
+macro.help.event.1014.line8=Можно узнать его ник, используя &cJOINEDPLAYER&6
+macro.help.event.1014.line9=
+macro.help.event.1014.line10=
+macro.help.event.1014.line11=
+
+# Event 1015 (onShowGui)
+
+macro.help.event.1015.line6=&f<onShowGui>
+macro.help.event.1015.line7=Событие происходит при изменении графического интерфейса.
+macro.help.event.1015.line8=Например, когда игрок открыл сундук. Переменная &cGUI&6
+macro.help.event.1015.line9=
+macro.help.event.1015.line10=
+macro.help.event.1015.line11=
+
+# Event 1016 (onArmourDurabilityChange)
+
+macro.help.event.1016.line6=&f<onArmourDurabilityChange>
+macro.help.event.1016.line7=Событие происходит, когда прочность брони меняется.
+macro.help.event.1016.line8=
+macro.help.event.1016.line9=
+macro.help.event.1016.line10=
+macro.help.event.1016.line11=
+
+# Event 1017 (onAutoCraftingComplete)
+
+macro.help.event.1017.line6=&f<onAutoCraftingComplete>
+macro.help.event.1017.line7=Событие происходит, когда процесс автокрафтинга завершен.
+macro.help.event.1017.line8=Переменная &cREASON&6
+macro.help.event.1017.line9=
+macro.help.event.1017.line10=
+macro.help.event.1017.line11=
+
+# Event 1018 (onConfigChange)
+
+macro.help.event.1018.line6=&f<onConfigChange>
+macro.help.event.1018.line7=Это событие возникает при активном изменении конфигурации.
+macro.help.event.1018.line8=Переменная &cCONFIG
+macro.help.event.1018.line9=
+macro.help.event.1018.line10=
+macro.help.event.1018.line11=
+

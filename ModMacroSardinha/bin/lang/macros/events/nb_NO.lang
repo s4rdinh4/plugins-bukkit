@@ -1,0 +1,166 @@
+macro.help.event.line3=Du redigerer en &chandlingsmakro&6. Denne typen makro kan ikke hente
+macro.help.event.line4=parametere ifra brukeren. Du kan inkuldere filer ved å bruke &c $$<fil.txt>
+macro.help.event.line5=eller lukke skript mellom &c$${&6 og &c}$$&6¬
+
+# Event 1000 (onJoinGame)
+
+macro.help.event.1000.line6=&f<onJoinGame> &e(Ved tilkobling til spill)
+macro.help.event.1000.line7=Denne handlingen utføres når du kobler til en tjener (Enspiller eller
+macro.help.event.1000.line8=Flerspiller) og kan brukes til å starte bakgrunnsmakroer eller utføre
+macro.help.event.1000.line9=kommandoer når du kobler til.
+macro.help.event.1000.line10=
+macro.help.event.1000.line11=
+
+# Event 1001 (onChat)
+
+macro.help.event.1001.line6=&f<onChat> &e(Ved chat melding)
+macro.help.event.1001.line7=Denne handlingen utføres når en ny melding sendes til deg
+macro.help.event.1001.line8=ifra tjeneren. Du kan hente meldingen ved å bruke
+macro.help.event.1001.line9=&cCHAT&6 variablen innenfor handlingen.
+macro.help.event.1001.line10=
+macro.help.event.1001.line11=
+
+# Event 1002 (onHealthChange)
+
+macro.help.event.1002.line6=&f<onHealthChange> &e(Ved livsendring)
+macro.help.event.1002.line7=Denne handlingen utføres når livet ditt endres, som f.eks
+macro.help.event.1002.line8=når du tar skade eller får liv ifra mat eller eliksirer. Hvert
+macro.help.event.1002.line9=hjerte representerer 2 liv, så maksimumslivet er 20.
+macro.help.event.1002.line10=Du kan hente ut nåværende liv ved å bruke den globale
+macro.help.event.1002.line11=variablen &cHEALTH&6.
+
+# Event 1003 (onFoodChange)
+
+macro.help.event.1003.line6=&f<onFoodChange> &e(Ved sultendring)
+macro.help.event.1003.line7=Denne handlingen utføres når sulten din endres.
+macro.help.event.1003.line8=Hvert matsymbol representerer 2 metthetsenheter,
+macro.help.event.1003.line9=så maksimumsmetthet er 20.
+macro.help.event.1003.line10=Du kan hente ut nåværende metthetsnivå ved å bruke den globale
+macro.help.event.1003.line11=variablen &cHUNGER&6.
+
+# Event 1004 (onArmourChange)
+
+macro.help.event.1004.line6=&f<onArmourChange> &e(Ved rustningsnivåendring)
+macro.help.event.1004.line7=Utføres hver gang rustningsnivået ditt endres. F.eks når du
+macro.help.event.1004.line8=tar skade eller putter på en ny rustning. Hvert rustningsikon
+macro.help.event.1004.line9=representerer 2 rustningsnivå, dermed er totalen 20 rustningsnivå.
+macro.help.event.1004.line10=Du kan hente nåværende rustningsnivå ved å bruke den globale
+macro.help.event.1004.line11=variablen &cARMOUR&6.
+
+# Event 1005 (onWorldChange)
+
+macro.help.event.1005.line6=&f<onWorldChange> &e(Ved verdensbytte)
+macro.help.event.1005.line7=Utføres hver gang verdenen byttes, for eksempel
+macro.help.event.1005.line8=når du bytter mellom verdener på flerverdens-tjener eller
+macro.help.event.1005.line9=når du forflytter deg ifra overflaten til Nether.
+macro.help.event.1005.line10=
+macro.help.event.1005.line11=
+
+# Event 1006 (onModeChange)
+
+macro.help.event.1006.line6=&f<onModeChange> &e(Ved spillmodusbytte)
+macro.help.event.1006.line7=Denne handlingen utføres når du bytter spillmodus,
+macro.help.event.1006.line8=som f.eks når du bytter ifra kreativ til overlevelsesmodus.
+macro.help.event.1006.line9=
+macro.help.event.1006.line10=
+macro.help.event.1006.line11=
+
+# Event 1007 (onInventorySlotChange)
+
+macro.help.event.1007.line6=&f<onInventorySlotChange> &e(Ved inventarplassbytte)
+macro.help.event.1007.line7=Denne handlingen utføres når du bytter inventarplassen du holder.
+macro.help.event.1007.line8=Den forrige valgte plassen kan hentes ved å bruke
+macro.help.event.1007.line9=&cOLDINVSLOT&6 variablen innenfor handlingen.
+macro.help.event.1007.line10=
+macro.help.event.1007.line11=
+
+# Event 1008 (onOxygenChange)
+
+macro.help.event.1008.line6=&f<onOxygenChange> &e(Ved oksygenendring)
+macro.help.event.1008.line7=Denne handlingen utføres når oksygennivået ditt endres.
+macro.help.event.1008.line8=Oksygennivået tilsvare hvor mange ticks du kan puste undervann
+macro.help.event.1008.line9=før du starter å drukne. Du kan hente oksygennivået ved å
+macro.help.event.1008.line10=bruke den globale variablen &cOXYGEN&6.
+macro.help.event.1008.line11=
+
+# Event 1009 (onXPChange)
+
+macro.help.event.1009.line6=&f<onXPChange> &e(Ved erfaringsendring)
+macro.help.event.1009.line7=Utføres når din erfaring endres. Du kan hente
+macro.help.event.1009.line8=ditt nåværende erfaringsnivå ved å bruke
+macro.help.event.1009.line9=de globale variablene &cTOTALXP&6 og &cXP&6.
+macro.help.event.1009.line10=
+macro.help.event.1009.line11=
+
+# Event 1010 (onLevelChange)
+
+macro.help.event.1010.line6=&f<onLevelChange> &e(Ved erfaringsnivåendring)
+macro.help.event.1010.line7=Utføres når erfaringsnivået ditt endres.
+macro.help.event.1010.line8=Nåværende nivå kan hentes ved å bruke
+macro.help.event.1010.line9=den globale variablen &cLEVEL&6.
+macro.help.event.1010.line10=
+macro.help.event.1010.line11=
+
+# Event 1011 (onItemDurabilityChange)
+
+macro.help.event.1011.line6=&f<onItemDurabilityChange> &e(Ved itemholdbarhetsendring)
+macro.help.event.1011.line7=Utføres når itemet du holder sin holdbarhet endres.
+macro.help.event.1011.line8=Forskjellige items har forksjellige holdbarheter og endres
+macro.help.event.1011.line9=på forskjellige tider. Du kan hente det nåværende holdbarhetsnivået
+macro.help.event.1011.line10=ved å bruke den global variablen &cDURABILITY&6.
+macro.help.event.1011.line11=
+
+# Event 1012 (onWeatherChange)
+
+macro.help.event.1012.line6=&f<onWeatherChange> &e(Ved værendring)
+macro.help.event.1012.line7=Utføres når været skifter.
+macro.help.event.1012.line8=Du kan hente nåværende regnstyrke ved å bruke
+macro.help.event.1012.line9=den globale variablen &cRAIN&6.
+macro.help.event.1012.line10=
+macro.help.event.1012.line11=
+
+# Event 1013 (onPickupItem)
+
+macro.help.event.1013.line6=&f<onPickupItem> &e(Ved plukk av item)
+macro.help.event.1013.line7=Utføres når et item plukkes opp av spilleren.
+macro.help.event.1013.line8=Du kan hente item-ID ved å bruke variablen
+macro.help.event.1013.line9=&cPICKUPID&6, navnet på itemet med variablen
+macro.help.event.1013.line10=&cPICKUPITEM&6 og antall items plukket opp med
+macro.help.event.1013.line11=variablen &cPICKUPAMOUNT&6 innenfor handlingen.
+
+# Event 1014 (onPlayerJoined)
+
+macro.help.event.1014.line6=&f<onPlayerJoined> &e(Ved spillertilkobling)
+macro.help.event.1014.line7=Utføres når en spiller kobler til tjeneren du er koblet til.
+macro.help.event.1014.line8=Du kan hente de 10 første tegnene i navnet ved å bruke
+macro.help.event.1014.line9=variablen &cJOINEDPLAYER&6 innenfor handlingen.
+macro.help.event.1014.line10=
+macro.help.event.1014.line11=
+
+# Event 1015 (onShowGui)
+
+macro.help.event.1015.line6=&f<onShowGui> &e(Ved åpning av en GUI)
+macro.help.event.1015.line7=Handlingen utføres når du åpner en GUI.
+macro.help.event.1015.line8=Du kan hente GUInavnet ved å bruke den 
+macro.help.event.1015.line9=globale variablen &cGUI&6, dersom ingen GUI
+macro.help.event.1015.line10=vises, returneres "NONE".
+macro.help.event.1015.line11=
+
+# Event 1016 (onArmourDurabilityChange)
+
+macro.help.event.1016.line6=&f<onArmourDurabilityChange> &e(Ved rustningsholdbarhetsendring)
+macro.help.event.1016.line7=Utføres når holdbarheten på rustningen din endres.
+macro.help.event.1016.line8=Forskjellig rustning har forskjellig holdbarhet,
+macro.help.event.1016.line9=og endrer holdbarhet til forskjellige tider.
+macro.help.event.1016.line10=
+macro.help.event.1016.line11=
+
+# Event 1017 (onAutoCraftingComplete)
+
+macro.help.event.1017.line6=&f<onAutoCraftingComplete> &e(Ved automatisk laging)
+macro.help.event.1017.line7=Denne handlingen utføres når automatisk crafting er fullført.
+macro.help.event.1017.line8=Grunnen til at craftingen er fullført kan hentes gjennom
+macro.help.event.1017.line9=variablen &cREASON&6 innenfor handlingen.
+macro.help.event.1017.line10=
+macro.help.event.1017.line11=
+

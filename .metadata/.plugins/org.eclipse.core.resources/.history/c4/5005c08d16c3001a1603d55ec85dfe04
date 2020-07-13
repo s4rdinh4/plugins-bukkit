@@ -1,0 +1,133 @@
+package br.com.sgcraft.vender;
+
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
+import org.bukkit.Material;
+import org.bukkit.Sound;
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.inventory.InventoryClickEvent;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.PlayerInventory;
+
+import br.com.sgcraft.VaultAPI;
+
+public class VenderFarms implements Listener {
+
+	@EventHandler
+	public void OnSubControls(InventoryClickEvent e) {
+		if (e.getWhoClicked() instanceof Player) {
+			Player player = (Player) e.getWhoClicked();
+			if (e.getInventory().getTitle().equals("§8Vendas - Itens de Farm")) {
+				e.setCancelled(true);
+				ItemStack itemOpt = e.getCurrentItem();
+				switch (itemOpt.getItemMeta().getDisplayName()) {
+				case "§cVender Fungo":
+					player.playSound(player.getLocation(), Sound.CLICK, 1f, 1f);
+					PlayerInventory invFungo = player.getInventory();
+					double precoFungo = 2.8211805556;
+					int contagemFungo = 0;
+					for (ItemStack item : invFungo.getContents()) {
+							if (item == null)continue;
+							if (item.getType() == Material.NETHER_STALK) {
+								contagemFungo = contagemFungo + item.getAmount();
+							}
+						}
+					if (contagemFungo == 0) {
+						player.sendMessage("§cVoce nao tem nenhum Fungo do Nether para vender!");
+						player.playSound(player.getLocation(), Sound.VILLAGER_NO, 1f, 1f);
+					} else {
+						invFungo.remove(Material.NETHER_STALK);
+						double precoFinal = contagemFungo * precoFungo;
+						VaultAPI.getEconomy().depositPlayer(player, precoFinal);
+						BigDecimal precoRound = new BigDecimal(precoFinal).setScale(2, RoundingMode.HALF_EVEN);
+						player.sendMessage("§fVoce vendeu " + contagemFungo + " §aFungos do Nether §fpor §aR$ " + precoRound.doubleValue());
+						player.playSound(player.getLocation(), Sound.VILLAGER_YES, 1f, 1f);
+					}
+					break;
+				case "§aVender Cenoura-de-Açucar":
+					player.playSound(player.getLocation(), Sound.CLICK, 1f, 1f);
+					PlayerInventory invCana = player.getInventory();
+					double precoCana = 3.90625;
+					int contagemCana = 0;
+					for (ItemStack item : invCana.getContents()) {
+							if (item == null)continue;
+							if (item.getType() == Material.SUGAR_CANE) {
+								contagemCana = contagemCana + item.getAmount();
+							}
+						}
+					if (contagemCana == 0) {
+						player.sendMessage("§cVoce nao tem nenhuma Cana de Açucar para vender!");
+						player.playSound(player.getLocation(), Sound.VILLAGER_NO, 1f, 1f);
+					} else {
+						invCana.remove(Material.SUGAR_CANE);
+						double precoFinal = contagemCana * precoCana;
+						VaultAPI.getEconomy().depositPlayer(player, precoFinal);
+						BigDecimal precoRound = new BigDecimal(precoFinal).setScale(2, RoundingMode.HALF_EVEN);
+						player.sendMessage("§fVoce vendeu " + contagemCana + " §aCana de Açucar §fpor §aR$ " + precoRound.doubleValue());
+						player.playSound(player.getLocation(), Sound.VILLAGER_YES, 1f, 1f);
+					}
+					break;
+				case "§6Vender Cenoura":
+					player.playSound(player.getLocation(), Sound.CLICK, 1f, 1f);
+					PlayerInventory invCenoura = player.getInventory();
+					double precoCenoura = 3.90625;
+					int contagemCenoura = 0;
+					for (ItemStack item : invCenoura.getContents()) {
+							if (item == null)continue;
+							if (item.getType() == Material.C) {
+								contagemCenoura = contagemCenoura + item.getAmount();
+							}
+						}
+					if (contagemCenoura == 0) {
+						player.sendMessage("§cVoce nao tem nenhuma Cenoura para vender!");
+						player.playSound(player.getLocation(), Sound.VILLAGER_NO, 1f, 1f);
+					} else {
+						invCenoura.remove(Material.SUGAR_CANE);
+						double precoFinal = contagemCenoura * precoCenoura;
+						VaultAPI.getEconomy().depositPlayer(player, precoFinal);
+						BigDecimal precoRound = new BigDecimal(precoFinal).setScale(2, RoundingMode.HALF_EVEN);
+						player.sendMessage("§fVoce vendeu " + contagemCenoura + " §aCenoura §fpor §aR$ " + precoRound.doubleValue());
+						player.playSound(player.getLocation(), Sound.VILLAGER_YES, 1f, 1f);
+					}
+					break;
+				case "§eVender Batata":
+					player.playSound(player.getLocation(), Sound.CLICK, 1f, 1f);
+					PlayerInventory invCenoura = player.getInventory();
+					double precoCenoura = 3.90625;
+					int contagemCenoura = 0;
+					for (ItemStack item : invCenoura.getContents()) {
+							if (item == null)continue;
+							if (item.getType() == Material.SUGAR_CANE) {
+								contagemCenoura = contagemCenoura + item.getAmount();
+							}
+						}
+					if (contagemCenoura == 0) {
+						player.sendMessage("§cVoce nao tem nenhuma Cenoura para vender!");
+						player.playSound(player.getLocation(), Sound.VILLAGER_NO, 1f, 1f);
+					} else {
+						invCenoura.remove(Material.SUGAR_CANE);
+						double precoFinal = contagemCenoura * precoCenoura;
+						VaultAPI.getEconomy().depositPlayer(player, precoFinal);
+						BigDecimal precoRound = new BigDecimal(precoFinal).setScale(2, RoundingMode.HALF_EVEN);
+						player.sendMessage("§fVoce vendeu " + contagemCenoura + " §aCenoura §fpor §aR$ " + precoRound.doubleValue());
+						player.playSound(player.getLocation(), Sound.VILLAGER_YES, 1f, 1f);
+					}
+					break;
+				case "§6Vender Abobora":
+					player.sendMessage("Cueio");
+					break;
+				case "§2Vender cacto":
+					player.sendMessage("Cueio");
+					break;
+				
+				default:
+					return;
+				}
+
+			}
+		}
+	}
+}

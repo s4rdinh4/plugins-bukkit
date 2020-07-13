@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/igors/Desktop/Servidores/Backups dos Servidores/Antigos/FULL PVP INAUGURACAO/plugins/LegendChat.jar"/>
+	<classpathentry kind="lib" path="C:/Users/igors/Desktop/Servidores/Backups dos Servidores/Antigos/FULLPVP-MIGRAR/PaperSpigot-1.8.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/igors/Desktop/Servidores/Backups dos Servidores/Antigos/FULLPVP-MIGRAR/plugins/Vault.jar"/>
+	<classpathentry kind="lib" path="C:/Users/igors/Desktop/SgCraft - Teste Plugins/plugins/WorldEdit.jar"/>
+	<classpathentry kind="lib" path="C:/Users/igors/Desktop/Servidores/Plugins/SimpleClans.jar"/>
+	<classpathentry kind="lib" path="C:/Users/igors/Desktop/PluginsLibs/WorldGuard.jar"/>
+	<classpathentry kind="lib" path="C:/Users/igors/Desktop/Servidores/Backups dos Servidores/Antigos/FULL PVP/plugins/worldguard-6.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/igors/Desktop/PluginsLibs/spigot1.8.8_javadoc.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

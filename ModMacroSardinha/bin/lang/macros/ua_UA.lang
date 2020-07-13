@@ -1,0 +1,382 @@
+
+message.enabledsp=&b[MACROS] Підтримка Макро увімкнена
+message.autosp=&b[MACROS] Конфігурація що використовується &a%s
+message.automp=&b[MACROS] Конфігурація що використовується для сервера &a%s
+
+options.title=Установки Макро
+options.selectconfig=Виберіть конфігурацію
+options.option.title=Налаштування
+options.option.general=Основні налаштування
+options.option.enableoverride=Увімкнути функцію&b Macro Override
+options.option.enableoverridechat=Перевизначити функцію в чаті GUI
+options.option.enableautoswitch=Автоперемикання
+options.option.discovery=Налаштування Автовизначення
+options.option.waitforhomecount=Чекайте, підрах. точки домів (надійніше)
+options.option.commandhomelist=&bСписок точок домів &fкоманда
+options.option.commandtownlist=&bСписок міст &fкоманда
+options.newconfig.title=Додати конфігурацію
+options.newconfig.prompt=Введіть ім'я для нової конфігурації
+options.newconfig.prompt2=Використ. поточний адрес сервера
+options.newconfig.option=Скопіюйте поточну конфігурацію
+options.defaultconfig=По замовчуванню
+options.addconfig=&7<Додати конфігурацію>
+
+gui.auto=Авто
+gui.add=Додати
+gui.save=Зберегти
+gui.yes=Так	
+gui.no=Ні
+gui.ok=OK
+gui.cancel=Скасувати
+gui.create=Створити
+gui.icon=Іконка
+gui.copy=Копіювати
+gui.move=Перемістити
+gui.delete=Видалити
+gui.edit=Редагувати
+gui.importall=<< Імпортувати все
+gui.refresh=Обновити
+gui.buttonopts=Команди панелі кнопок
+
+macro.bind.title=Макро прив'язки
+macro.edit.title=Редагувати Макро
+macro.currentconfig=Конфіг: &f%s
+macro.config.global=Всі конфігурації
+macro.prompt.execute=<Натисніть макро клавішу для виконання>
+macro.prompt.edit=<Натисніть макро клавішу для редаг. або клікніть по ній>
+macro.prompt.bind=Редагування макро прив'язки для &f%s
+macro.keyname.control=Control
+macro.keyname.alt=Alt
+macro.keyname.shift=Shift
+macro.option.title=Налаштування
+macro.option.inhibit=Не запам'ятовувати параметрів
+macro.option.global=Застосувати для всіх конфігурацій
+macro.action.title=Дії
+macro.action.editfile=Редагувати файл...
+macro.help.title=Допомога
+
+macro.help.line1=Введіть Ваш макрос нижче, розділяючи кілька команд за допомогою "|"
+macro.help.line2=напр.&c /give Гравець 123|/give Гравець 456
+
+macro.help.line3=Використовуйте&c $$<file.txt> &6для включення макро файлу або&c $$m &6для запиту файлу
+macro.help.line4=Використовуйте&c $$? &6або&c $$[name] &6для запиту вводу
+macro.help.line5=Використовуйте &c$$0&6-&c$$9 &6для запиту заданого тексту
+macro.help.line6=Використовуйте &c$$i &6для запиту предмету, &c$$i:d &6fдля предмету зі значення пошкодження
+macro.help.line7=Використовуйте &c$$t &6для запиту міста, &c$$w &6для запиту точки варпу
+macro.help.line8=Використовуйте &c$$f &6для запиту друзів, &c$$u &6для запиту онлайн гравців
+macro.help.line9=Використовуйте &c$$h &6для запиту точок домів, &c$$p &6для запиту розміщення (координати)
+macro.help.line10=Використовуйте &c$$! &6для завершення макро і повернення курсора
+macro.help.line11=Вкладені скрипти &c$${&6 і &c}$$&6
+
+macro.help.line12=Перевірти зміни, які Ви хочете застосувати для цього макро
+macro.help.line13=Макрос буде виконуватися тільки при натиснутих
+macro.help.line14=зазначених клавішах
+
+macro.help.inhibit=Для збереження введених параметрів зберігайтесь кожен раз
+macro.help.global=Для використання цього макро в усіх конфігураціях
+
+param.prompt.param=Введіть&e%s&c параметр для <&e%s&c>
+param.prompt.inner=Введіть %s внутрішній&e%s&c параметр для <&e%s&c>
+param.prompt.named=Введіть ім'я параметру для <&e%s&c>
+param.prompt.item=Введіть ID предмета для <&e%s&c>
+param.prompt.town=Введіть назву міста для <&e%s&c>
+param.prompt.home=Введіть назву дому для <&e%s&c>
+param.prompt.person=Введіть %s ім'я для <&e%s&c>
+param.prompt.friend=друг
+param.prompt.user=гравець
+param.prompt.list=Виберіть значення для <&e%s&c>
+
+param.action.confirmdelete=Ви впевненні, що хочете видалити
+param.action.confirmdeletefile=Ви впевненні, що хочете видалити файл
+
+list.new.file=&7<Новий Файл>
+list.new.friend=&7<Додати Друга>
+list.new.home=&7<Додати Дім>
+list.new.town=&7<Додати Місто>
+list.new.preset=&7<Додати новий текст>
+list.prompt.preset=Введіть текст
+
+editor.choosefile=Виберіть файл для редагування:
+editor.createnewfile=Створити новий файл:
+editor.editing=Редагування %s
+
+entry.newentry=Новий запис:
+entry.newfriend=Новий друг:
+entry.newtown=Нове місто:
+entry.newhome=Новий дім:
+entry.newfile=Новий файл:
+entry.editentry=Редагувати запис:
+entry.editfriend=Редагувати друга:
+entry.edittown=Редагувати місто:
+entry.editgome=Редагувати дім:
+entry.chooseicon=Змінити іконку:
+
+query.wait=Запит сервера, будь ласка, почекайте ...
+query.failed=Запит повернув 0 результатів
+query.results=Результати запиту:
+
+list.new.place=&7<Додати Місце>
+entry.newplace=Нове місце:
+entry.editplace=Редагувати місце:
+entry.usemylocation=<< Використати поточні координати
+macro.mode.normal=Звичайний Макро
+macro.mode.keystate=Розширений Макро
+macro.mode.conditional=Умовний Макро
+
+macro.prompt.edit.simple=<Натисніть макро клавішу для редагування>
+macro.prompt.keydown=Вниз
+macro.prompt.keyheld=Утримання
+macro.prompt.keyup=Вверх
+macro.prompt.repeatrate=Повторити затримку (ms)
+
+macro.help2.line1=Основні макроси дозволяють пов'язувати окремі макроси до &cклавіш
+macro.help2.line2=&cВверх&6, &cВниз&6 і &c Утримання&6. Ви не можете включити  параметрів
+macro.help2.line3=в цей тип макро, але Ви можете включити файли використовуючи &c$$<file.txt>
+macro.help2.line4=Ви можете включити скрипти у Ваші макроси, але приховані функції такі 
+macro.help2.line5=як &cWAIT&6 і &cLOOP&6 не будуть працювати при натисканні клавіші &cУтримання&6.
+
+script.error.stack=Скрипт завершився з переповненням стеку, перевірте синтаксис Вашого скрипта
+script.error.context=Невірне перемикання контексту в скрипті
+script.error.stackoverflow=Переповнення стеку в скрипті
+
+options.option.alwaysgoback=Повернутись до екрану прив'язок
+options.option.optionsfirst=Показати параметри перед допомогою
+options.option.simple=Використати простий GUI екран
+options.option.runstatus=Нехтувати екраном відобр. статусу макро
+options.option.configs=Параметри Конфігурації
+options.option.configs.use=Використ. кожний параметр конфігу для:
+options.option.configs.friends=Список Друзів
+options.option.configs.homes=Список Домів
+options.option.configs.towns=Список Міст
+options.option.configs.warps=Список Варпів
+options.option.configs.places=Список Місць
+options.option.configs.presets=Список Пресетів
+options.option.commandwarplist=&bСписок Варпів &fкоманда
+options.option.commandwarplist2=&bСписок Варпів &fдодаткові сторінки команд
+options.option.commandwarplist2help=&7Використовуйте &b%s &7для номера сторінки
+options.option.advanced=Додаткові Налаштування
+options.option.reserved=Редаг. Резервні Кнопки
+
+param.prompt.warp=Введіть ім'я варпу для <&e%s&c>
+list.new.warp=&7<Додати Варп>
+entry.newwarp=Новий варп:
+entry.editwarp=Редагувати варп:
+
+macro.option.inhibit.simple=Немає Параметрів
+macro.option.global.simple=Загальні
+
+macro.hover.empty=&8<Порожній>
+
+gui.options=Змінити параметри...
+
+options.option.directmode=Доступ до меню прив'язки без &bsneak
+options.option.compatibilitymode=Режим Сумісності (перезапуск)
+options.option.disabledeepinject=Відімкнути глибокі вкладення
+options.option.keyboardedit=Редагована розкладка клавіатури
+options.option.debug=Увімкнути налагоджувальну інформацію
+options.option.chathistory=Зберігати повідомлення в локальній історії
+
+entry.displayname=Відобразити ім'я
+
+message.usingpack=&b[MACROS] Вокористовувати текстурпак &a%s
+message.badpack=&b[MACROS] Помилка відповідності такстурпаку для &a%s
+message.failedpack=&b[MACROS] Помилка завантаження текстурпаку для &a%s&b. Встановлено по замовчуванню.
+
+script.error.nosign=&cУ Вас немає таблички в основному інвентарі
+
+macro.help.always=Щоб виконати цей макрос, перевизначте конфліктуючі прив'язки клавіш
+macro.option.always=Завжди перевизначати конфліктуючі прив'язки клавіш
+macro.option.always.simple=Примусова зміна
+
+macro.hover.overlay=Скасовано &a%s
+
+message.config=&b[MACROS] Використовується конфігурація &a%s
+message.overlay.add=&b[MACROS] Імпорт конфігурації &a%s
+message.overlay.remove=&b[MACROS] Вимкнено імпортовану конфігурацію &a%s
+
+tooltip.options=Налаштування
+tooltip.editfile=Редактор Тексту
+tooltip.icons=Менеджер Іконок
+tooltip.bind=Редактор прив'язки клавіш
+tooltip.guiedit=Редактор GUI
+tooltip.perms=Перегляд дозволів
+
+macro.icons.title=Менеджер Іконок
+macro.icons.help=Клікніть на іконку для зняття скріншота
+macro.icons.town=Іконки Міст:
+macro.icons.homes=Іконки Домів:
+
+thumbnail.help.hint1=Виділіть Ваш ескіз нижче, а потім клікніть мишкою 
+thumbnail.help.hint2=або натисніть RETURN для збереження мініатюри.
+
+editor.title=Редагування Текстового Файлу
+
+options.option.animation=Використовувати GUI анімацію
+options.option.rememberpage=Пам'ятати останній &bвикористаний &fекран
+
+macro.prompt.edit.event=<Виберіть подію для редагування>
+macro.prompt.edit.button=<Виберіть кнопку для редагування>
+macro.prompt.edit.buttons=<Лівий клік->редаг. прив'язки,правий->властивостей>
+macro.prompt.edit.unknown=&4<Допомога недоступна>
+
+editor.rename=Змінити ім'я файлу
+editor.rename.prompt=Введіть нове ім'я файлу
+editor.savechanges=Ви хочете зберегти зміни у файл
+editor.title.minimise=Мінімізувати редактор
+editor.prompt.minimise=Це мінімізує редактор
+editor.prompt.saveonmin=Ви хочете спершу зберегти файл?
+editor.prompt.remember=Завжди виконувати це
+
+firstrun.title=Macro / Keybind Mod Успішно Встановлено
+firstrun.line1=Вітаємо!
+firstrun.line2=&eMacro / Keybind Mod&6 був успішно завантажений.
+firstrun.line3=Рекомендуємо зараз налаштувати  &eМакро Визначення
+firstrun.line4=і &eАктивувати&6 кнопки в Minecraft у вікні &eКонтролю&6. Клікніть
+firstrun.line5=&eНалаштування Кнопок&6 щоб зробити це. Якщо Ви бажаєте 
+firstrun.line6=переналаштувати кнопки, Ви можете зроби це у будь-який час 
+firstrun.line7=вибравши &eНалаштування&6 -> &eКерування&6 у головному меню.
+firstrun.yes=Налаштування Кнопок
+firstrun.no=Скасувати
+
+options.option.largebuttons=Великі кнопки на екрані прив'язки
+options.option.showslots=Показувати слот ID в контейнерах
+options.option.autoscale=Масшт. клавіатуру до розмірів екрану
+
+control.properties.title=Властивості для %s
+control.properties.name=Ім'я
+control.properties.button.hide=Приховати якщо непов'язана
+control.properties.button.text=Відображення Тексту
+control.properties.button.sticky=Не закривати GUI при кліку
+
+control.delete.title=Видалити керування
+control.delete.line1=Ви впевнені, що хочете видалити
+
+grid.properties.title=Параметри Сітки
+grid.properties.rows=Рядки
+grid.properties.cols=Стовбці
+grid.properties.colWidth=Ширина стовбця
+
+macro.prompt.condition=Умова
+macro.prompt.condtrue=IF TRUE
+macro.prompt.condfalse=IF FALSE
+
+macro.help3.line1=Умовні макроси дозволяють виконувати різні макроси 
+macro.help3.line2=на основі певних умов. Це більш потужно, ніж використання
+macro.help3.line3=&cIF&6/&cELSE&6 тому, що умова перевіряється &nперед&r компіляцією
+macro.help3.line4=макроса. Це дозволяє використовувати різні параметри в
+macro.help3.line5=кожному макросі.
+macro.help3.line6=Ви можете використовувати будь-який тип параметра в умовному макросі,
+macro.help3.line7=які допускаються &cзвичайних&6 макросах.
+
+startuperrors.title=Виявлено помилки при старті
+startuperrors.line1=&eMacro / Keybind Mod&6 виявлено наступні помилки при старті¬
+
+options.option.extra=Додаткові Налаштування
+options.option.chathidden=Сховати Minecraft чат
+
+control.properties.label.text=Мітка
+control.properties.label.binding=Прив'язка
+control.properties.forecolour=Колір тексту
+control.properties.backcolour=Колір фону
+
+control.properties.label.align=Вирівнювання
+control.properties.label.align.topleft=Ліворуч Зверху
+control.properties.label.align.topcentre=Поцентру Зверху
+control.properties.label.align.topright=Праворуч Зверху
+control.properties.label.align.middleleft=Ліворуч Посередині
+control.properties.label.align.middlecentre=Поцентру Посередині
+control.properties.label.align.middleright=Праворуч Посередині
+control.properties.label.align.bottomleft=Ліворуч Знизу
+control.properties.label.align.bottomcentre=Поцентру Знизу
+control.properties.label.align.bottomright=Праворуч Знизу
+
+options.option.spamfilter=Налаштування захисту від флуду
+options.option.spamfilter.enable=Включити захист від &bфлуду
+options.option.spamfilter.style=Тип захисту від флуду
+options.option.spamfilter.queuesize=Максимальний розмір &bЧерги
+
+options.option.simpleoverride=Мала &bкорекція &fстрок
+
+time.now=зараз
+time.never=ніколи
+
+macro.permissions.title=Перегляд дозволів
+macro.permissions.banner=Останнє оновлення &f%s
+macro.permissions.script.title=Заборонені команди скрипта
+macro.permissions.script.info1=Наступні команди зараз заборонені через дозволи сервера:
+macro.permissions.option.scriptwarnings=Створювати попередження коли команда заборонена
+macro.permissions.gui.refresh=Примусове оновлення
+
+script.error.denied=%s була заборонена сервером
+
+param.option.replaceall=Замінити всі входження
+editor.option.help=Показати контекстну допомогу
+
+control.properties.textarea.lifespan=Час показу повідомлення
+options.option.textboxhighlight=Дозволити підсвічування синтаксису в текстових полях
+control.properties.text.shadow=Тінь
+
+options.option.spamfilter.ignorecommands=Ігнорувати команди, які починаються з &b/
+options.option.debounce=Застосувати пересилання до macro key тригерів
+
+control.properties.bar.expression=Вираз
+control.properties.bar.min=Min значення
+control.properties.bar.max=Max значення
+
+macro.trigger.type.keys=Клавіші
+macro.trigger.type.events=Події
+macro.trigger.type.control=Кнопки
+
+options.option.buttonsonchat=Дозволити кнопки на &fекрані &bчату
+
+macro.prompt.edit.control=<LMOUSE для редаг., RMOUSE для властивостей>
+macro.prompt.list.sort=Натисніть S для сортування списку
+
+control.properties.bar.style=Стиль Панелі
+control.properties.bar.style.horizontal=Горизонтальна
+control.properties.bar.style.vertical=Вертикальна
+control.properties.bar.expression=Вираз
+
+layout.editor.title=GUI Редактор
+
+layout.editor.new.button=Додати Кнопку
+layout.editor.new.textarea=Додати Текст
+layout.editor.new.label=Додати Мітку
+layout.editor.new.progressbar=Додати Панель Прогресу
+
+layout.editor.grid=Вирівняти сітку
+
+layout.editor.slot=Слот
+layout.editor.screen=Екран
+layout.editor.nobinding=GUI не приєднано
+layout.editor.menu.create=Створити новий екран
+layout.editor.menu.reset=Скинути всі прив'язки екрану
+layout.editor.menu.rename=Встановити ім'я відображення
+layout.editor.help.line1=Перетягніть екрани з списку ліворуч, щоб 
+layout.editor.help.line2=приєднати їх до GUI слоту. Ви можете приєднати 
+layout.editor.help.line3=один екран кільком слотамa.
+layout.editor.available=Доступні Екрани
+layout.editor.assignments=Приєднання Екрану
+
+gui.exit=Вихід
+
+editor.rename.gui=Перейменувати Екран
+editor.rename.gui.prompt=Введіть нове ім'я відображення для екрану &e%s
+
+layout.contextmenu.execute=Виконати Macro
+layout.contextmenu.edit=Редагувати Macro
+layout.contextmenu.design=Редагувати Кнопки
+
+layout.delete.title=Видалити Екран
+layout.delete.line1=Ви дійсео хочете видалити
+
+layout.options.loadatstartup=Зберегти слот приєднань
+
+editor.menu.minimise=Мінімізувати редактор  &eCTRL+TAB
+editor.menu.editother=Редагувати інший файл
+editor.menu.help=Довідка Команд  &eF1
+
+reference.title=Довідка Команд
+reference.cmdlist=Доступні Команди
+reference.syntax=Синтаксис Команд
+reference.desc=Опис

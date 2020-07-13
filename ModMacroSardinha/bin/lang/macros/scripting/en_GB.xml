@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scriptactions xmlns:sa="http://eq2online.net/macros/scriptaction">
+    <sa:net>
+        <sa:eq2online>
+            <sa:macros>
+                <sa:scripting>
+                    <sa:actions>
+                        <sa:game>
+                            <sa:scriptactionclearcrafting hidden="false">
+                                <sa:name>CLEARCRAFTING</sa:name>
+                                <sa:usage>CLEARCRAFTING()</sa:usage>
+                                <sa:description>Clears the auto-crafting queue</sa:description>
+                            </sa:scriptactionclearcrafting>
+                            <sa:scriptactioncraft hidden="false">
+                                <sa:name>CRAFT</sa:name>
+                                <sa:usage>CRAFT(&lt;item[:damage]&gt;,[amount],[throw],[verbose])</sa:usage>
+                                <sa:description>Queues an auto-crafting request</sa:description>
+                            </sa:scriptactioncraft>
+                            <sa:scriptactioncraftandwait hidden="false">
+                                <sa:name>CRAFTANDWAIT</sa:name>
+                                <sa:usage>CRAFTANDWAIT(&lt;item[:id]&gt;,[amount],[throw],[verbose])</sa:usage>
+                                <sa:description>Queues an auto-crafting request and waits for it to complete</sa:description>
+                            </sa:scriptactioncraftandwait>
+                            <sa:scriptactiondisconnect hidden="false">
+                                <sa:name>DISCONNECT</sa:name>
+                                <sa:usage>DISCONNECT()</sa:usage>
+                                <sa:description>Disconnects from the current game or server</sa:description>
+                            </sa:scriptactiondisconnect>
+                            <sa:scriptactiongetid hidden="false">
+                                <sa:name>GETID</sa:name>
+                                <sa:usage>GETID(&lt;x&gt;,&lt;y&gt;,&lt;z&gt;,&lt;#idvar&gt;,[#datavar])</sa:usage>
+                                <sa:return>ID of the block at the specified position</sa:return>
+                                <sa:description>Gets the ID and optionally the data value of the block at the specified coordinates in the world</sa:description>
+                            </sa:scriptactiongetid>
+                            <sa:scriptactiongetidrel hidden="false">
+                                <sa:name>GETIDREL</sa:name>
+                                <sa:usage>GETIDREL(&lt;xoffset&gt;,&lt;yoffset&gt;,&lt;zoffset&gt;,&lt;#idvar&gt;,[#datavar])</sa:usage>
+                                <sa:return>ID of the block at the specified position</sa:return>
+                                <sa:description>Gets the ID and optionally the data value of the block at the specified coordinates relative to the player</sa:description>
+                            </sa:scriptactiongetidrel>
+                            <sa:scriptactiongetiteminfo>
+                                <sa:name>GETITEMINFO</sa:name>
+                                <sa:usage>GETITEMINFO(&lt;item[:damage]&gt;,[&lt;&amp;namevar&gt;],[#maxstacksize],[&amp;type],[#dropid])</sa:usage>
+                                <sa:return>Name of the item</sa:return>
+                                <sa:description>Gets the name and other info for the specified item id, returns "None" if the item is not valid</sa:description>
+                            </sa:scriptactiongetiteminfo>
+                            <sa:scriptactiongetslot hidden="false">
+                                <sa:name>GETSLOT</sa:name>
+                                <sa:usage>GETSLOT(&lt;item[:damage]&gt;,&lt;#idvar&gt;,[startfromslotid])</sa:usage>
+                                <sa:return>Slot ID containing a matching item</sa:return>
+                                <sa:description>Gets the id of the slot containing an item matching the specified item id, returns -1 if item not found</sa:description>
+                            </sa:scriptactiongetslot>
+                            <sa:scriptactiongetslotitem hidden="false">
+                                <sa:name>GETSLOTITEM</sa:name>
+                                <sa:usage>GETSLOTITEM(&lt;slotid&gt;,&lt;#idvar&gt;,[#stacksizevar],[#datavar])</sa:usage>
+                                <sa:return>Item ID of the item in the slot</sa:return>
+                                <sa:description>Gets information about the item in the specified slot</sa:description>
+                            </sa:scriptactiongetslotitem>
+                            <sa:scriptactioninventorydown hidden="false">
+                                <sa:name>INVENTORYDOWN</sa:name>
+                                <sa:usage>INVENTORYDOWN([amount])</sa:usage>
+                                <sa:description>Scrolls the specified number of slots down through the hotbar</sa:description>
+                            </sa:scriptactioninventorydown>
+                            <sa:scriptactioninventoryup hidden="false">
+                                <sa:name>INVENTORYUP</sa:name>
+                                <sa:usage>INVENTORYUP([amount])</sa:usage>
+                                <sa:description>Scrolls the specified number of slots up through the hotbar</sa:description>
+                            </sa:scriptactioninventoryup>
+                            <sa:scriptactionitemid hidden="false">
+                                <sa:name>ITEMID</sa:name>
+                                <sa:usage>ITEMID(&lt;item&gt;)</sa:usage>
+                                <sa:return>Legacy ID for the item</sa:return>
+                                <sa:description>Gets the legacy (numeric) ID for the specified item</sa:description>
+                            </sa:scriptactionitemid>
+                            <sa:scriptactionitemname hidden="false">
+                                <sa:name>ITEMNAME</sa:name>
+                                <sa:usage>ITEMNAME(&lt;id&gt;)</sa:usage>
+                                <sa:return>Item descriptor for the specified item id</sa:return>
+                                <sa:description>Get the item descriptor for a legacy (numeric) item ID</sa:description>
+                            </sa:scriptactionitemname>
+                            <sa:scriptactionlook hidden="false">
+                                <sa:name>LOOK</sa:name>
+                                <sa:usage>LOOK(&lt;yaw&gt;,[pitch],[time])</sa:usage>
+                                <sa:description>Faces the player in the specified direction, prefix angles with + or - for relative moves</sa:description>
+                            </sa:scriptactionlook>
+                            <sa:scriptactionlooks hidden="false">
+                                <sa:name>LOOKS</sa:name>
+                                <sa:usage>LOOKS(&lt;yaw&gt;,[pitch],[time])</sa:usage>
+                                <sa:description>Smoothly turnes the player to the specified direction, prefix angles with + or - for relative moves</sa:description>
+                            </sa:scriptactionlooks>
+                            <sa:scriptactionpick hidden="false">
+                                <sa:name>PICK</sa:name>
+                                <sa:usage>PICK(&lt;item[:damage]&gt;,[item[:damage]],...)</sa:usage>
+                                <sa:return>Item ID of the item which was picked or -1 if not picked</sa:return>
+                                <sa:description>Selects the specified item id if it is on the hotbar, specify multiple items to pick in order of preference</sa:description>
+                            </sa:scriptactionpick>
+                            <sa:scriptactionplacesign hidden="false">
+                                <sa:name>PLACESIGN</sa:name>
+                                <sa:usage>PLACESIGN([line1],[line2],[line3],[line4],[showgui])</sa:usage>
+                                <sa:description>Places a sign in the world with the specified text (if you have one)</sa:description>
+                            </sa:scriptactionplacesign>
+                            <sa:scriptactionplaysound hidden="false">
+                                <sa:name>PLAYSOUND</sa:name>
+                                <sa:usage>PLAYSOUND(&lt;sound&gt;)</sa:usage>
+                                <sa:description>Plays a sound</sa:description>
+                            </sa:scriptactionplaysound>
+                            <sa:scriptactionrespawn hidden="false">
+                                <sa:name>RESPAWN</sa:name>
+                                <sa:usage>RESPAWN()</sa:usage>
+                                <sa:description>Respawns the player if you are dead</sa:description>
+                            </sa:scriptactionrespawn>
+                            <sa:scriptactionsetslotitem hidden="false">
+                                <sa:name>SETSLOTITEM</sa:name>
+                                <sa:usage>SETSLOTITEM([item[:damage]],[slot],[amount])</sa:usage>
+                                <sa:description>Creative mode only, set the contents of a hot bar slot</sa:description>
+                            </sa:scriptactionsetslotitem>
+                            <sa:scriptactionslot hidden="false">
+                                <sa:name>SLOT</sa:name>
+                                <sa:usage>SLOT(&lt;slot&gt;)</sa:usage>
+                                <sa:description>Selects the specified slot on the hot bar</sa:description>
+                            </sa:scriptactionslot>
+                            <sa:scriptactionslotclick hidden="false">
+                                <sa:name>SLOTCLICK</sa:name>
+                                <sa:usage>SLOTCLICK(&lt;slot&gt;,[button],[shift])</sa:usage>
+                                <sa:description>Simulates clicking on the specified slot in the current GUI, optionally using RMB and shiftkey</sa:description>
+                            </sa:scriptactionslotclick>
+                            <sa:scriptactionsprint hidden="false">
+                                <sa:name>SPRINT</sa:name>
+                                <sa:usage>SPRINT()</sa:usage>
+                                <sa:description>Sets the player state to sprinting if sufficient stamina (food)</sa:description>
+                            </sa:scriptactionsprint>
+                            <sa:scriptactiontileid hidden="false">
+                                <sa:name>TILEID</sa:name>
+                                <sa:usage>TILEID(&lt;item&gt;)</sa:usage>
+                                <sa:return>Legacy ID for the tile</sa:return>
+                                <sa:description>Gets the legacy (numeric) ID for the specified tile</sa:description>
+                            </sa:scriptactiontileid>
+                            <sa:scriptactiontilename hidden="false">
+                                <sa:name>TILENAME</sa:name>
+                                <sa:usage>TILENAME(&lt;id&gt;)</sa:usage>
+                                <sa:return>Tile descriptor for the specified tile id</sa:return>
+                                <sa:description>Get the descriptor for a legacy (numeric) tile ID</sa:description>
+                            </sa:scriptactiontilename>
+                            <sa:scriptactionunsprint hidden="false">
+                                <sa:name>UNSPRINT</sa:name>
+                                <sa:usage>UNSPRINT()</sa:usage>
+                                <sa:description>Sets the player state to not sprinting</sa:description>
+                            </sa:scriptactionunsprint>
+                        </sa:game>
+                        <sa:input>
+                            <sa:scriptactionkey hidden="false">
+                                <sa:name>KEY</sa:name>
+                                <sa:usage>KEY(&lt;bind&gt;)</sa:usage>
+                                <sa:description>Activates the specified key binding for 1 tick</sa:description>
+                            </sa:scriptactionkey>
+                            <sa:scriptactionkeydown hidden="false">
+                                <sa:name>KEYDOWN</sa:name>
+                                <sa:usage>KEYDOWN(&lt;bind&gt;)</sa:usage>
+                                <sa:description>Sets the specified key binding state to pressed, only works with pressable bindings</sa:description>
+                            </sa:scriptactionkeydown>
+                            <sa:scriptactionkeyup hidden="false">
+                                <sa:name>KEYUP</sa:name>
+                                <sa:usage>KEYUP(&lt;bind&gt;)</sa:usage>
+                                <sa:description>Sets the specified key binding state to unpressed, only works with pressable bindings</sa:description>
+                            </sa:scriptactionkeyup>
+                            <sa:scriptactiontogglekey hidden="false">
+                                <sa:name>TOGGLEKEY</sa:name>
+                                <sa:usage>TOGGLEKEY(&lt;bind&gt;)</sa:usage>
+                                <sa:description>Toggles the pressed state of the specified key binding, only works with pressable bindings</sa:description>
+                            </sa:scriptactiontogglekey>
+                            <sa:scriptactionpress hidden="false">
+                                <sa:name>PRESS</sa:name>
+                                <sa:usage>PRESS(&lt;lwjgl_name&gt;)</sa:usage>
+                                <sa:description>Injects the specified key event directly into the keyboard buffer for 1 tick</sa:description>
+                            </sa:scriptactionpress>
+                            <sa:scriptactiontype hidden="false">
+                                <sa:name>TYPE</sa:name>
+                                <sa:usage>TYPE(&lt;text&gt;)</sa:usage>
+                                <sa:description>Injects the specified key sequence directly into the keyboard buffer at a rate of 1 key per tick</sa:description>
+                            </sa:scriptactiontype>
+                        </sa:input>
+                        <sa:lang>
+                            <sa:scriptactionassign hidden="true">
+                                <sa:name>ASSIGN</sa:name>
+                                <sa:usage>&lt;var&gt; = &lt;value&gt;</sa:usage>
+                                <sa:description>Internal function</sa:description>
+                            </sa:scriptactionassign>
+                            <sa:scriptactionbreak hidden="false">
+                                <sa:name>BREAK</sa:name>
+                                <sa:usage>BREAK</sa:usage>
+                                <sa:description>Interrupts exection of the innermost loop</sa:description>
+                            </sa:scriptactionbreak>
+                            <sa:scriptactioncalcyawto hidden="false">
+                                <sa:name>CALCYAWTO</sa:name>
+                                <sa:usage>CALCYAWTO(&lt;xpos&gt;,&lt;zpos&gt;,[#yaw],[#distance])</sa:usage>
+                                <sa:return>Yaw value to coordinates</sa:return>
+                                <sa:description>Calculates the absolute yaw angle to the specified coordinates</sa:description>
+                            </sa:scriptactioncalcyawto>
+                            <sa:scriptactiondec hidden="false">
+                                <sa:name>DEC</sa:name>
+                                <sa:usage>DEC(&lt;#var&gt;,[amount])</sa:usage>
+                                <sa:description>Decrements the specified counter by 1 or by the specified amount</sa:description>
+                            </sa:scriptactiondec>
+                            <sa:scriptactiondecode hidden="false">
+                                <sa:name>DECODE</sa:name>
+                                <sa:usage>DECODE(&lt;input&gt;,[&amp;output])</sa:usage>
+                                <sa:return>Decoded string</sa:return>
+                                <sa:description>base64_decode</sa:description>
+                            </sa:scriptactiondecode>
+                            <sa:scriptactiondo hidden="false">
+                                <sa:name>DO</sa:name>
+                                <sa:usage>DO([count])</sa:usage>
+                                <sa:description>Begins a loop, specify a number of loops to limit the loop count</sa:description>
+                            </sa:scriptactiondo>
+                            <sa:scriptactionecho hidden="false">
+                                <sa:name>ECHO</sa:name>
+                                <sa:usage>ECHO(&lt;text&gt;)</sa:usage>
+                                <sa:description>Sends the specified message as a chat packet</sa:description>
+                            </sa:scriptactionecho>
+                            <sa:scriptactionencode hidden="false">
+                                <sa:name>ENCODE</sa:name>
+                                <sa:usage>ENCODE(&lt;input&gt;,[&amp;output])</sa:usage>
+                                <sa:return>Encoded string</sa:return>
+                                <sa:description>base64_encode</sa:description>
+                            </sa:scriptactionencode>
+                            <sa:scriptactionelse hidden="true">
+                                <sa:name>ELSE</sa:name>
+                                <sa:usage>ELSE</sa:usage>
+                                <sa:description>ELSE clause</sa:description>
+                            </sa:scriptactionelse>
+                            <sa:scriptactionelseif hidden="true">
+                                <sa:name>ELSEIF</sa:name>
+                                <sa:usage>ELSEIF(&lt;condition&gt;)</sa:usage>
+                                <sa:description>ELSEIF clause</sa:description>
+                            </sa:scriptactionelseif>
+                            <sa:scriptactionendif hidden="true">
+                                <sa:name>ENDIF</sa:name>
+                                <sa:usage>ENDIF</sa:usage>
+                                <sa:description>ENDIF clause</sa:description>
+                            </sa:scriptactionendif>
+                            <sa:scriptactionendunsafe hidden="true">
+                                <sa:name>ENDUNSAFE</sa:name>
+                                <sa:usage>ENDUNSAFE</sa:usage>
+                                <sa:description>Ends an active UNSAFE block</sa:description>
+                            </sa:scriptactionendunsafe>
+                            <sa:scriptactionexec hidden="false">
+                                <sa:name>EXEC</sa:name>
+                                <sa:usage>EXEC(&lt;file.txt&gt;,[taskname],[params],...)</sa:usage>
+                                <sa:description>Creates a task by running the specified script file</sa:description>
+                            </sa:scriptactionexec>
+                            <sa:scriptactionfor hidden="false">
+                                <sa:name>FOR</sa:name>
+                                <sa:usage>FOR(&lt;#var&gt;,&lt;start&gt;,&lt;end&gt;)</sa:usage>
+                                <sa:description>Begins a FOR->NEXT loop using the specified var as a loop counter, #var can be used inside the loop</sa:description>
+                            </sa:scriptactionfor>
+                            <sa:scriptactionforeach hidden="false">
+                                <sa:name>FOREACH</sa:name>
+                                <sa:usage>FOREACH(&lt;iterator&gt;)</sa:usage>
+                                <sa:description>Runs a loop over the specified iterator</sa:description>
+                            </sa:scriptactionforeach>
+                            <sa:scriptactiongetproperty hidden="false">
+                                <sa:name>GETPROPERTY</sa:name>
+                                <sa:usage>GETPROPERTY(&lt;control&gt;,&lt;property&gt;)</sa:usage>
+                                <sa:description>Returns the value of the specified property from the specified GUI control</sa:description>
+                            </sa:scriptactiongetproperty>
+                            <sa:scriptactionif hidden="true">
+                                <sa:name>IF</sa:name>
+                                <sa:usage>IF(&lt;condition&gt;)</sa:usage>
+                                <sa:description>IF clause</sa:description>
+                            </sa:scriptactionif>
+                            <sa:scriptactionifbeginswith hidden="true">
+                                <sa:name>IFBEGINSWITH</sa:name>
+                                <sa:usage>IFBEGINSWITH(&lt;haystack&gt;,&lt;needle&gt;)</sa:usage>
+                                <sa:description>IFBEGINSWITH clause</sa:description>
+                            </sa:scriptactionifbeginswith>
+                            <sa:scriptactionifcontains hidden="true">
+                                <sa:name>IFCONTAINS</sa:name>
+                                <sa:usage>IFCONTAINS(&lt;haystack&gt;,&lt;needle&gt;)</sa:usage>
+                                <sa:description>IFCONTAINS clause</sa:description>
+                            </sa:scriptactionifcontains>
+                            <sa:scriptactionifendswith hidden="true">
+                                <sa:name>IFENDSWITH</sa:name>
+                                <sa:usage>IFENDSWITH(&lt;haystack&gt;,&lt;needle&gt;)</sa:usage>
+                                <sa:description>IFENDSWITH clause</sa:description>
+                            </sa:scriptactionifendswith>
+                            <sa:scriptactionifmatches hidden="true">
+                                <sa:name>IFMATCHES</sa:name>
+                                <sa:usage>IFMATCHES(&lt;subject&gt;,&lt;pattern&gt;,[&amp;target],[group])</sa:usage>
+                                <sa:description>IFMATCHES clause</sa:description>
+                            </sa:scriptactionifmatches>
+                            <sa:scriptactioniif hidden="false">
+                                <sa:name>IIF</sa:name>
+                                <sa:usage>IIF(&lt;condition&gt;,&lt;truetext&gt;,[falsetext])</sa:usage>
+                                <sa:description>Inline IF statement, sends truetext as a chat message if condition succeeds, or sends falsetext if not</sa:description>
+                            </sa:scriptactioniif>
+                            <sa:scriptactioninc hidden="false">
+                                <sa:name>INC</sa:name>
+                                <sa:usage>INC(&lt;#var&gt;,[amount])</sa:usage>
+                                <sa:description>Increments the specified counter by 1 or by the specified amount</sa:description>
+                            </sa:scriptactioninc>
+                            <sa:scriptactionjoin hidden="false">
+                                <sa:name>JOIN</sa:name>
+                                <sa:usage>JOIN(&lt;glue&gt;,&lt;arrayname&gt;,[&amp;output])</sa:usage>
+                                <sa:return>Joined array parts</sa:return>
+                                <sa:description>Implodes the specified array to a delimited string</sa:description>
+                            </sa:scriptactionjoin>
+                            <sa:scriptactionlcase hidden="false">
+                                <sa:name>LCASE</sa:name>
+                                <sa:usage>LCASE(&lt;input&gt;,[&amp;output])</sa:usage>
+                                <sa:return>Input as lowercase</sa:return>
+                                <sa:description>Converts the input string to lower case and stores it in output</sa:description>
+                            </sa:scriptactionlcase>
+                            <sa:scriptactionlog hidden="false">
+                                <sa:name>LOG</sa:name>
+                                <sa:usage>LOG(&lt;text&gt;)</sa:usage>
+                                <sa:description>Outputs the specified text into the local chat stream</sa:description>
+                            </sa:scriptactionlog>
+                            <sa:scriptactionlogto hidden="false">
+                                <sa:name>LOGTO</sa:name>
+                                <sa:usage>LOGTO(&lt;target&gt;,&lt;text&gt;)</sa:usage>
+                                <sa:description>Outputs the specified text into the specified target, target can be a text file name or the name of a textarea</sa:description>
+                            </sa:scriptactionlogto>
+                            <sa:scriptactionloop hidden="false">
+                                <sa:name>LOOP</sa:name>
+                                <sa:usage>LOOP</sa:usage>
+                                <sa:description>Ends a loop that was started with DO</sa:description>
+                            </sa:scriptactionloop>
+                            <sa:scriptactionmatch hidden="false">
+                                <sa:name>MATCH</sa:name>
+                                <sa:usage>MATCH(&lt;subject&gt;,&lt;pattern&gt;,[&amp;target],[group],[default])</sa:usage>
+                                <sa:return>The matched subpatterns</sa:return>
+                                <sa:description>Runs a regular expression match on the subject and puts the result in &amp;target</sa:description>
+                            </sa:scriptactionmatch>
+                            <sa:scriptactionnext hidden="false">
+                                <sa:name>NEXT</sa:name>
+                                <sa:usage>NEXT</sa:usage>
+                                <sa:description>Completes a FOR->NEXT loop</sa:description>
+                            </sa:scriptactionnext>
+                            <sa:scriptactionprompt hidden="false">
+                                <sa:name>PROMPT</sa:name>
+                                <sa:usage>PROMPT(&lt;&amp;target&gt;,&lt;paramstring&gt;,[prompt],[override],[default])</sa:usage>
+                                <sa:return>The supplied value</sa:return>
+                                <sa:description>Displays a prompt (or prompts) by parsing the params in paramstring</sa:description>
+                            </sa:scriptactionprompt>
+                            <sa:scriptactionrandom hidden="false">
+                                <sa:name>RANDOM</sa:name>
+                                <sa:usage>RANDOM(&lt;#target&gt;,[max],[min])</sa:usage>
+                                <sa:return>Random value</sa:return>
+                                <sa:description>Assigns a random number between min and max to target</sa:description>
+                            </sa:scriptactionrandom>
+                            <sa:scriptactionreplace hidden="false">
+                                <sa:name>REPLACE</sa:name>
+                                <sa:usage>REPLACE(&lt;&amp;subject&gt;,&lt;search&gt;,[replace])</sa:usage>
+                                <sa:return>Candidate with replaced values, does not alter source string if returned</sa:return>
+                                <sa:description>Replace all occurrences of search with replace in &amp;subject</sa:description>
+                            </sa:scriptactionreplace>
+                            <sa:scriptactionset hidden="false">
+                                <sa:name>SET</sa:name>
+                                <sa:usage>SET(&lt;target&gt;,[value])</sa:usage>
+                                <sa:description>Sets the value of target to value (or TRUE if value is omitted)</sa:description>
+                            </sa:scriptactionset>
+                            <sa:scriptactionsetlabel hidden="false">
+                                <sa:name>SETLABEL</sa:name>
+                                <sa:usage>SETLABEL(&lt;labelname&gt;,&lt;text&gt;,[binding])</sa:usage>
+                                <sa:description>Sets the text (and optionally binding) of the specified label</sa:description>
+                            </sa:scriptactionsetlabel>
+                            <sa:scriptactionsetproperty hidden="false">
+                                <sa:name>SETPROPERTY</sa:name>
+                                <sa:usage>SETPROPERTY(&lt;control&gt;,&lt;property&gt;,&lt;value&gt;)</sa:usage>
+                                <sa:description>Sets the value of the specified property on the specified GUI control</sa:description>
+                            </sa:scriptactionsetproperty>
+                            <sa:scriptactionsplit hidden="false">
+                                <sa:name>SPLIT</sa:name>
+                                <sa:usage>SPLIT(&lt;delimiter&gt;,&lt;source&gt;,[output])</sa:usage>
+                                <sa:return>Array containing the split parts</sa:return>
+                                <sa:description>Explode the supplied source string to an array</sa:description>
+                            </sa:scriptactionsplit>
+                            <sa:scriptactionsqrt hidden="false">
+                                <sa:name>SQRT</sa:name>
+                                <sa:usage>SQRT(&lt;value&gt;,[#outvar])</sa:usage>
+                                <sa:return>The square root as an integer</sa:return>
+                                <sa:description>Calculate the square root of value and store it in #outvar</sa:description>
+                            </sa:scriptactionsqrt>
+                            <sa:scriptactionstop hidden="false">
+                                <sa:name>STOP</sa:name>
+                                <sa:usage>STOP([id])</sa:usage>
+                                <sa:description>Stops the current macro, or macros matching the specified ID</sa:description>
+                            </sa:scriptactionstop>
+                            <sa:scriptactionstrip hidden="false">
+                                <sa:name>STRIP</sa:name>
+                                <sa:usage>STRIP(&lt;&amp;target&gt;,&lt;text&gt;)</sa:usage>
+                                <sa:return>Stripped text</sa:return>
+                                <sa:description>Strips all formatting codes from the specified text and assigns the result to &amp;target</sa:description>
+                            </sa:scriptactionstrip>
+                            <sa:scriptactiontoggle hidden="false">
+                                <sa:name>TOGGLE</sa:name>
+                                <sa:usage>TOGGLE([flag])</sa:usage>
+                                <sa:description>Toggles the specified boolean flag's value</sa:description>
+                            </sa:scriptactiontoggle>
+                            <sa:scriptactionucase hidden="false">
+                                <sa:name>UCASE</sa:name>
+                                <sa:usage>UCASE(&lt;input&gt;,[&amp;output])</sa:usage>
+                                <sa:return>Input as uppercase</sa:return>
+                                <sa:description>Converts the input string to upper case and stores it in output</sa:description>
+                            </sa:scriptactionucase>
+                            <sa:scriptactionunsafe hidden="true">
+                                <sa:name>UNSAFE</sa:name>
+                                <sa:usage>UNSAFE(&lt;ticks&gt;)</sa:usage>
+                                <sa:description>Begins an UNSAFE block with execution limit set to ticks</sa:description>
+                            </sa:scriptactionunsafe>
+                            <sa:scriptactionunset hidden="false">
+                                <sa:name>UNSET</sa:name>
+                                <sa:usage>UNSET(&lt;flag&gt;)</sa:usage>
+                                <sa:description>Un-sets the specified variable</sa:description>
+                            </sa:scriptactionunset>
+                            <sa:scriptactionuntil hidden="false">
+                                <sa:name>UNTIL</sa:name>
+                                <sa:usage>UNTIL(&lt;condition&gt;)</sa:usage>
+                                <sa:description>Completes a loop started with DO but exits the loop if condition is met</sa:description>
+                            </sa:scriptactionuntil>
+                            <sa:scriptactionwait hidden="false">
+                                <sa:name>WAIT</sa:name>
+                                <sa:usage>WAIT(&lt;time&gt;)</sa:usage>
+                                <sa:description>Pauses the script for the time specified, suffix "ms" for a wait in milliseconds or "t" to wait in ticks</sa:description>
+                            </sa:scriptactionwait>
+                            <sa:scriptactionwhile hidden="false">
+                                <sa:name>WHILE</sa:name>
+                                <sa:usage>WHILE(&lt;condition&gt;)</sa:usage>
+                                <sa:description>Completes a loop started with DO but exits the loop if condition is not met</sa:description>
+                            </sa:scriptactionwhile>
+                            <sa:scriptactionarraysize>
+                                <sa:name>ARRAYSIZE</sa:name>
+                                <sa:usage>ARRAYSIZE(&lt;array&gt;,[&lt;outvar&gt;])</sa:usage>
+                                <sa:return>Size of the array</sa:return>
+                                <sa:description>Stores the size of the specified array in outvar</sa:description>
+                            </sa:scriptactionarraysize>
+                            <sa:scriptactionindexof>
+                                <sa:name>INDEXOF</sa:name>
+                                <sa:usage>INDEXOF(&lt;array&gt;,&lt;outvar&gt;,&lt;searchfor&gt;)</sa:usage>
+                                <sa:return>Index of searchfor</sa:return>
+                                <sa:description>Gets the first index of searchfor in array and stores it in outvar, returns -1 on failure</sa:description>
+                            </sa:scriptactionindexof>
+                            <sa:scriptactionpop>
+                                <sa:name>POP</sa:name>
+                                <sa:usage>POP(&lt;array&gt;,&lt;outvar&gt;)</sa:usage>
+                                <sa:description>Removes the last entry from the tail of array and stores it in outvar</sa:description>
+                            </sa:scriptactionpop>
+                            <sa:scriptactionpush>
+                                <sa:name>PUSH</sa:name>
+                                <sa:usage>PUSH(&lt;array&gt;,&lt;value&gt;)</sa:usage>
+                                <sa:description>Appends value to the end of array</sa:description>
+                            </sa:scriptactionpush>
+                            <sa:scriptactionput>
+                                <sa:name>PUT</sa:name>
+                                <sa:usage>PUT(&lt;array&gt;,&lt;value&gt;)</sa:usage>
+                                <sa:description>Inserts value at the first empty point in array</sa:description>
+                            </sa:scriptactionput>
+                        </sa:lang>
+                        <sa:mod>
+                            <sa:scriptactionconfig hidden="false">
+                                <sa:name>CONFIG</sa:name>
+                                <sa:usage>CONFIG(&lt;configname&gt;)</sa:usage>
+                                <sa:description>Switch to the specified configuration</sa:description>
+                            </sa:scriptactionconfig>
+                            <sa:scriptactionimport hidden="false">
+                                <sa:name>IMPORT</sa:name>
+                                <sa:usage>IMPORT(&lt;configname&gt;)</sa:usage>
+                                <sa:description>Overlay the specified configuration</sa:description>
+                            </sa:scriptactionimport>
+                            <sa:scriptactionunimport hidden="false">
+                                <sa:name>UNIMPORT</sa:name>
+                                <sa:usage>UNIMPORT()</sa:usage>
+                                <sa:description>Remove the specified configuration overlay if active</sa:description>
+                            </sa:scriptactionunimport>
+                        </sa:mod>
+                        <sa:option>
+                            <sa:scriptactionbind hidden="false">
+                                <sa:name>BIND</sa:name>
+                                <sa:usage>BIND(&lt;bind&gt;,&lt;keycode&gt;)</sa:usage>
+                                <sa:description>Set the specified key binding to the specified key code</sa:description>
+                            </sa:scriptactionbind>
+                            <sa:scriptactionchatheight hidden="false">
+                                <sa:name>CHATHEIGHT</sa:name>
+                                <sa:usage>CHATHEIGHT(&lt;value&gt;,[time])</sa:usage>
+                                <sa:description>Set height of the Minecraft chat whilst ingame 20-180</sa:description>
+                            </sa:scriptactionchatheight>
+                            <sa:scriptactionchatheightfocused hidden="false">
+                                <sa:name>CHATHEIGHTFOCUSED</sa:name>
+                                <sa:usage>CHATHEIGHTFOCUSED(&lt;value&gt;,[time])</sa:usage>
+                                <sa:description>Set height of the Minecraft chat whilst in the chat GUI 20-180</sa:description>
+                            </sa:scriptactionchatheightfocused>
+                            <sa:scriptactionchatopacity hidden="false">
+                                <sa:name>CHATOPACITY</sa:name>
+                                <sa:usage>CHATOPACITY(&lt;value&gt;,[time])</sa:usage>
+                                <sa:description>Set opacity of the Minecraft chat 0-100</sa:description>
+                            </sa:scriptactionchatopacity>
+                            <sa:scriptactionchatscale hidden="false">
+                                <sa:name>CHATSCALE</sa:name>
+                                <sa:usage>CHATSCALE(&lt;value&gt;,[time])</sa:usage>
+                                <sa:description>Set scale of the Minecraft chat 0-100</sa:description>
+                            </sa:scriptactionchatscale>
+                            <sa:scriptactionchatvisible hidden="false">
+                                <sa:name>CHATVISIBLE</sa:name>
+                                <sa:usage>CHATVISIBLE(&lt;value&gt;)</sa:usage>
+                                <sa:description>Set visibility of minecraft chat</sa:description>
+                            </sa:scriptactionchatvisible>
+                            <sa:scriptactionchatwidth hidden="false">
+                                <sa:name>CHATWIDTH</sa:name>
+                                <sa:usage>CHATWIDTH(&lt;value&gt;,[time])</sa:usage>
+                                <sa:description>Set width of the Minecraft chat 40-320</sa:description>
+                            </sa:scriptactionchatwidth>
+                            <sa:scriptactionfog hidden="false">
+                                <sa:name>FOG</sa:name>
+                                <sa:usage>FOG([value])</sa:usage>
+                                <sa:description>Toggles render distance, or optionally specify render distance</sa:description>
+                            </sa:scriptactionfog>
+                            <sa:scriptactionfov hidden="false">
+                                <sa:name>FOV</sa:name>
+                                <sa:usage>FOV(&lt;value&gt;,[time])</sa:usage>
+                                <sa:description>Sets the FOV angle in degrees, specifying time causes the value to change smoothly</sa:description>
+                            </sa:scriptactionfov>
+                            <sa:scriptactiongamma hidden="false">
+                                <sa:name>GAMMA</sa:name>
+                                <sa:usage>GAMMA(&lt;value&gt;,[time])</sa:usage>
+                                <sa:description>Sets the brightness value (percent), specifying time causes the value to change smoothly</sa:description>
+                            </sa:scriptactiongamma>
+                            <sa:scriptactionmusic hidden="false">
+                                <sa:name>MUSIC</sa:name>
+                                <sa:usage>MUSIC(&lt;value&gt;,[time])</sa:usage>
+                                <sa:description>Sets the music volume, specifying time causes the value to change smoothly</sa:description>
+                            </sa:scriptactionmusic>
+                            <sa:scriptactionresourcepacks hidden="false">
+                                <sa:name>RESOURCEPACKS</sa:name>
+                                <sa:usage>RESOURCEPACKS([pattern],[pattern...])</sa:usage>
+                                <sa:description>Sets the resource pack stack to the order matching the specified patterns</sa:description>
+                            </sa:scriptactionresourcepacks>
+                            <sa:scriptactionsensitivity hidden="false">
+                                <sa:name>SENSITIVITY</sa:name>
+                                <sa:usage>SENSITIVITY(&lt;value&gt;,[time])</sa:usage>
+                                <sa:description>Sets the mouse sensitivity (between 0 and 200), specifying time causes the value to change smoothly</sa:description>
+                            </sa:scriptactionsensitivity>
+                            <sa:scriptactionshadergroup hidden="false">
+                                <sa:name>SHADERGROUP</sa:name>
+                                <sa:usage>SHADERGROUP([path])</sa:usage>
+                                <sa:description>Sets the active shader group to the shader matching path, use "+" to select next group</sa:description>
+                            </sa:scriptactionshadergroup>
+                            <sa:scriptactionsetres hidden="false">
+                                <sa:name>SETRES</sa:name>
+                                <sa:usage>SETRES(&lt;width&gt;,&lt;height&gt;)</sa:usage>
+                                <sa:description>Sets the size of the minecraft game window</sa:description>
+                            </sa:scriptactionsetres>
+                            <sa:scriptactionvolume hidden="false">
+                                <sa:name>VOLUME</sa:name>
+                                <sa:usage>VOLUME(&lt;value&gt;,[time])</sa:usage>
+                                <sa:description>Sets the sound volume, specifying time causes the value to change smoothly</sa:description>
+                            </sa:scriptactionvolume>
+                        </sa:option>
+                        <sa:scriptactionachievementget hidden="false">
+                            <sa:name>ACHIEVEMENTGET</sa:name>
+                            <sa:usage>ACHIEVEMENTGET(&lt;text&gt;,[itemid[:damage]])</sa:usage>
+                            <sa:description>Displays the &quot;achievment get&quot; popup with a custom message</sa:description>
+                        </sa:scriptactionachievementget>
+                        <sa:scriptactionbindgui hidden="false">
+                            <sa:name>BINDGUI</sa:name>
+                            <sa:usage>BINDGUI(&lt;slot&gt;,&lt;screen&gt;)</sa:usage>
+                            <sa:description>Binds the specified custom screen to the slot specified</sa:description>
+                        </sa:scriptactionbindgui>
+                        <sa:scriptactionclearchat hidden="false">
+                            <sa:name>CLEARCHAT</sa:name>
+                            <sa:usage>CLEARCHAT()</sa:usage>
+                            <sa:description>Clears the current chat stream</sa:description>
+                        </sa:scriptactionclearchat>
+                        <sa:scriptactiongui hidden="false">
+                            <sa:name>GUI</sa:name>
+                            <sa:usage>GUI([name])</sa:usage>
+                            <sa:description>Show (or hide) a gui screen</sa:description>
+                        </sa:scriptactiongui>
+                        <sa:scriptactionshowgui hidden="false">
+                            <sa:name>SHOWGUI</sa:name>
+                            <sa:usage>SHOWGUI(&lt;screen&gt;,[esc_screen])</sa:usage>
+                            <sa:description>Show a custom gui screen</sa:description>
+                        </sa:scriptactionshowgui>
+                        <sa:scriptactionstore hidden="false">
+                            <sa:name>STORE</sa:name>
+                            <sa:usage>STORE(&lt;type&gt;,[name])</sa:usage>
+                            <sa:description>Store a value into a list using the current environment</sa:description>
+                        </sa:scriptactionstore>
+                        <sa:scriptactionstoreover hidden="false">
+                            <sa:name>STOREOVER</sa:name>
+                            <sa:usage>STOREOVER(&lt;type&gt;,[name])</sa:usage>
+                            <sa:description>Store a value into a list using the current environment and overwrite it if exists</sa:description>
+                        </sa:scriptactionstoreover>
+                        <sa:scriptactiontime hidden="false">
+                            <sa:name>TIME</sa:name>
+                            <sa:usage>TIME(&lt;[&amp;target&gt;],[format])</sa:usage>
+                            <sa:return>Time as a string</sa:return>
+                            <sa:description>Stores the current time and date into &amp;target, optionally using format specified</sa:description>
+                        </sa:scriptactiontime>
+                    </sa:actions>
+                </sa:scripting>
+                <sa:modules>
+                    <sa:chatfilter>
+                     <sa:scriptactions>
+                         <sa:scriptactionchatfilter hidden="false">
+                             <sa:name>CHATFILTER</sa:name>
+                             <sa:usage>CHATFILTER(&lt;enabled&gt;)</sa:usage>
+                             <sa:description>Enable or disable the chat filter</sa:description>
+                         </sa:scriptactionchatfilter>
+                         <sa:scriptactionfilter hidden="false">
+                             <sa:name>FILTER</sa:name>
+                             <sa:usage>FILTER</sa:usage>
+                             <sa:description>Indicate that this chat meesage should be filtered and terminate</sa:description>
+                         </sa:scriptactionfilter>
+                         <sa:scriptactionmodify hidden="false">
+                             <sa:name>MODIFY</sa:name>
+                             <sa:usage>MODIFY(&lt;newmessage&gt;)</sa:usage>
+                             <sa:description>Set new content for this chat message</sa:description>
+                         </sa:scriptactionmodify>
+                            <sa:scriptactionpass hidden="false">
+                                <sa:name>PASS</sa:name>
+                                <sa:usage>PASS</sa:usage>
+                                <sa:description>Indicate that this chat meesage should PASS the filter and terminate</sa:description>
+                            </sa:scriptactionpass>
+                     </sa:scriptactions>
+                    </sa:chatfilter>
+                </sa:modules>
+            </sa:macros>
+        </sa:eq2online>
+    </sa:net>
+</scriptactions>

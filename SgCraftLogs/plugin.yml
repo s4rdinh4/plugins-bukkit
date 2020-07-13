@@ -1,0 +1,8 @@
+name: SgCraftLogs
+version: 4.0
+description: Logs player events.
+author: SARDINHA
+main: br.com.sgcraft.playerlogger.playerlogger
+
+commands:
+   sglog:

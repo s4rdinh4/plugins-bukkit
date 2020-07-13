@@ -1,0 +1,9 @@
+name: SgCraftP4FREE
+author: Sardinhagamer_HD
+version: 5.0
+main: br.com.sgcraft.Main
+
+commands:  
+  x9:
+  buff:
+  limparchat:

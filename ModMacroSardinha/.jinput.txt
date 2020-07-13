@@ -1,0 +1,18 @@
+#
+# jinput.txt
+# This file stores the jinput component mappings used by mod_macros
+#
+
+#
+# Mappings
+#
+
+253=jinput:mouse/*/*/*/3/*
+254=jinput:mouse/*/*/*/4/*
+
+#
+# Mapping names
+#
+
+253="MOUSE3"
+254="MOUSE4"

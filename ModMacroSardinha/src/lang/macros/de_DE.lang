@@ -1,0 +1,178 @@
+
+message.enabledsp=&b[MAKROS] Makro-Support aktiviert
+message.autosp=&b[MAKROS] Benutze Einstellung &a%s
+message.automp=&b[MAKROS] Benutze Einstellung für Server &a%s
+
+options.title=Makroeinstellungen
+options.selectconfig=Konfiguration auswählen
+options.option.title=Optionen
+options.option.general=Generelle Einstellungen
+options.option.enableoverride=Aktiviere die&b Makro-überschreib&f-funktion
+options.option.enableautoswitch=Automatisch wechseln
+options.option.discovery=Auto-discovery Settings
+options.option.waitforhomecount=Warte auf Homeaufzählung (Zuverlässiger)
+options.option.commandhomelist=&bHome List &f-befehl
+options.option.commandtownlist=&bTown List &f-befehl
+options.newconfig.title=Konfiguration hinzufügen
+options.newconfig.prompt=Gebe einen Namen für die neue Konfiguration ein
+options.newconfig.prompt2=Benutze derzeitige Serveradresse
+options.newconfig.option=Kopiere derzeitige Konfiguration
+options.defaultconfig=Standartkonfiguration
+options.addconfig=&7<Konfiguration hinzufügen>
+
+gui.auto=Auto
+gui.add=Hinzufügen
+gui.save=Speichern
+gui.yes=Ja
+gui.no=Nein
+gui.ok=OK
+gui.cancel=Abbrechen
+gui.create=Erstellen
+gui.icon=Icon
+gui.copy=Kopieren
+gui.move=Bewegen
+gui.delete=Löschen
+gui.edit=Editieren
+gui.importall=<< Alle Importieren
+gui.refresh=Aktualisieren
+
+macro.bind.title=Makrobindungen
+macro.edit.title=Makro editieren
+macro.currentconfig=Konfiguration: &f%s
+macro.config.global=Alle Konfigurationen
+macro.prompt.execute=<Makrotaste zum ausführen drücken>
+macro.prompt.edit=<Makrotaste zum editieren drücken oder oben auswählen>
+macro.prompt.bind=Bearbeite Makrobindung für &f%s
+macro.keyname.control=Steuerung
+macro.keyname.alt=Alt
+macro.keyname.shift=Shift
+macro.option.title=Optionen
+macro.option.inhibit=Parameter nicht speichern
+macro.option.global=Zu allen Konfigurationen hinzufügen
+macro.action.title=Aktionen
+macro.action.editfile=Datei bearb...
+macro.help.title=Hilfe
+macro.help.line1=Gebe dein Makro unten ein, trenne mehrere Befehle mit einer Pipe "|"
+macro.help.line2=Bsp.&c /give Player 123|/give Player 456¬
+macro.help.line3=Benutze&c $$<file.txt> &6um eine Datei einzubinden oder&c $$m &6um eine Datei zu wählen
+macro.help.line4=Benutze&c $$? &6oder&c $$[name] &6um eine Eingabe zu verlangen
+macro.help.line12=Prüfe die Modifikatoren für dieses Makro
+macro.help.line13=Das Makro wird nur ausgeführt, wenn die Spezifische Taste
+macro.help.line14=gedrückt wird
+macro.help.inhibit=Um eingegebene Parameter nicht zu speichern
+macro.help.global=Um das Makro für alle Konfigurationen zu verwenden
+
+param.prompt.param=Gebe&e%s&c Parameter für <&e%s&c>
+param.prompt.inner=Gebe den %s inneren&e%s&c Parameter für <&e%s&c>
+param.prompt.named=Gebe Namenparameter für <&e%s&c>
+param.prompt.item=Gebe Itemparameter für <&e%s&c>
+param.prompt.town=Gebe Stadtname ein für <&e%s&c>
+param.prompt.home=Gebe Homename ein für <&e%s&c>
+param.prompt.person=Gebe %s Name für <&e%s&c>
+param.prompt.friend=Freund
+param.prompt.user=Benutzer
+
+param.action.confirmdelete=Bist du dir sicher mit dem Löschen
+param.action.confirmdeletefile=Diese Datei wirklich löschen
+
+list.new.file=&7<Neue Datei>
+list.new.friend=&7<Freund hinzufügen>
+list.new.home=&7<Home hinzufügen>
+list.new.town=&7<Stadt hinzufügen>
+list.new.preset=&7<Texteintrag hinzufügen>
+list.prompt.preset=Gebe Text ein
+
+editor.choosefile=Datei zum bearbeiten wählen:
+editor.createnewfile=Neue Datei erstellen:
+editor.editing=Bearbeite %s
+
+entry.newentry=Neuer Eintrag:
+entry.newfriend=Neuer Freund:
+entry.newtown=Neue Stadt:
+entry.newhome=Neues Heim:
+entry.newfile=Neue Datei:
+entry.editentry=Eintrag bearbeiten:
+entry.editfriend=Freund bearbeiten:
+entry.edittown=Stadt bearbeiten:
+entry.editgome=Heim bearbeiten:
+entry.chooseicon=Icon wählen:
+
+query.wait=Serverabfrage. Bitte warten...
+query.failed=Anfrage gab 0 Ergebnisse
+query.results=Ergebnisse:
+
+list.new.place=&7<Ort hinzufügen>
+entry.newplace=Neuer Ort:
+entry.editplace=Ort bearbeiten:
+entry.usemylocation=<< Benutze aktuelle Koordinaten
+macro.mode.normal=Normales Makro
+macro.mode.keystate=Key State Makro
+
+macro.prompt.edit.simple=<Makrotaste zum bearbeiten drücken>
+macro.prompt.keydown=Taste Runter
+macro.prompt.keyheld=Taste Gedrückt
+macro.prompt.keyup=Taste Hoch
+macro.prompt.repeatrate=Repeat delay (ms)
+
+macro.help2.line1=Key state Makros erlauben dir, mehrere Makros auf die &cTaste
+macro.help2.line2=&cHoch&6, &cTaste Runter&6 und &cTaste Gedrückt&6 events. Du kannst
+macro.help2.line3=keine Parameter in diesem Makrotyp benutzen, aber du kannst Dateien mit &c$$<file.txt>¬
+macro.help2.line4=einbinden. Du kannst auch Scripte einbinden, aber Funktionen, wie
+macro.help2.line5=&cWAIT&6 und &cLOOP&6 werden nicht mit dem &cTaste Gedrückt&6 event funktionieren.
+
+script.error.stack=Script kann nicht ausgeführt werden. Bitte überprüfen den Syntax
+script.error.context=Ungültiger Switch im Script
+script.error.stackoverflow=Stack overflow im Script
+
+options.option.alwaysgoback=Zurück zum Verbindungsbildschirm
+options.option.optionsfirst=Zeige Optionen bevor Hilfe
+options.option.simple=Benutze Simplen GUI-Bildschirm
+options.option.runstatus=Überschreibschirm zeigt Makrostatus
+options.option.configs=Konfigurationseinstellungen
+options.option.configs.use=Benutze pro Konfig Einstellung für:
+options.option.configs.friends=Freundesliste
+options.option.configs.homes=Homeliste
+options.option.configs.towns=Stadtliste
+options.option.configs.warps=Warpliste
+options.option.configs.places=Ortliste
+options.option.configs.presets=Presetliste
+options.option.commandwarplist=&bWarp Auflistungs &fBefehl
+options.option.commandwarplist2=&bWarp Auflistung &zus. Seiten Befehl
+options.option.commandwarplist2help=&7Benutze &b%s &7für Seitenzahl
+options.option.advanced=Fortgeschrittene Einstellung
+options.option.reserved=Reservierte Tasten bearbeiten
+
+param.prompt.warp=Gebe Warpnamen ein für <&e%s&c>
+list.new.warp=&7<Warp hinzufügen>
+entry.newwarp=Neuer Warp:
+entry.editwarp=Warp editieren:
+
+macro.option.inhibit.simple=Keine Parameter
+macro.option.global.simple=Global
+
+macro.hover.empty=&8<Leer>
+
+gui.options=Optionen wechseln...
+
+macro.help.line5=Benutze &c$$0&6-&c$$9 &6um eine Eingabe zu verlangen
+macro.help.line6=Benutze &c$$i &6um ein Item, &c$$p &6um ein Ort zu verlangen
+macro.help.line7=Benutze &c$$t &6um eine Stadt, &c$$w &6um einen Warppunkt zu verlangen
+macro.help.line8=Benutze &c$$f &6um einen Freund, &c$$u &6um einen Online-User zu verlangen
+macro.help.line9=Benutze &c$$h &6um ein Home-Point zu verlangen.
+macro.help.line10=Benutze &c$$! &um das Makro zu beenden, aber Cursor anzuzeigen
+macro.help.line11=Beende Scripts mit &c$${&6 and &c}$$&6
+
+options.option.directmode=Bindungsmodus ohne &bschleichen
+options.option.compatibilitymode=Kompatibilitätsmodus (Neustart benötigt)
+options.option.keyboardedit=Tastasturlayout editieren
+options.option.debug=Debug-Informationen
+
+entry.displayname=Display name
+
+message.usingpack=&b[MACROS] Benutze Texture-Pack &a%s
+message.badpack=&b[MACROS] Fehler beim Texture-Pack &a%s
+message.failedpack=&b[MACROS] Kann Texturepack nicht laden -  &a%s&b. Benutze Standart.
+
+script.error.nosign=&cDu hast kein Schild in deinem Inventar
+
+

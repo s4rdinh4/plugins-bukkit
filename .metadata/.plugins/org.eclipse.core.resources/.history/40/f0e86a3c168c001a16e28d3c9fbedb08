@@ -1,0 +1,19 @@
+package br.com.sgcraft;
+
+import org.bukkit.Bukkit;
+import org.bukkit.plugin.java.JavaPlugin;
+
+import br.com.sgcraft.fly.ComandoMc;
+
+public class Main extends JavaPlugin{
+	
+	public void onEnable(){
+		  Bukkit.getConsoleSender().sendMessage("Plugin Ativado");
+		  
+		  getCommand("mc").setExecutor(new ComandoMc());
+	}
+	public void onDisable() {
+		  Bukkit.getConsoleSender().sendMessage("Plugin Desativado");
+	}
+	
+}

@@ -1,0 +1,247 @@
+message.enabledsp=&b[MACROS] Macros activado.
+message.autosp=&b[MACROS] Usando configuracion: &a%s
+message.automp=&b[MACROS] Usando configuracion para el servidor: &a%s
+
+options.title=Opciones de Macros
+options.selectconfig=Selecciona configuracion
+options.option.title=Opciones
+options.option.general=Opciones generales.
+options.option.enableoverride=Habilitar la funcion &b"override"
+options.option.enableoverridechat=Habilitar la funcion "override" en el chat.
+options.option.enableautoswitch=Cambio automatico.
+options.option.discovery=Auto-discovery Settings
+options.option.waitforhomecount=Esperar al conteo de homes (mas fiable)
+options.option.commandhomelist=Comando para &blista de homes
+options.option.commandtownlist=Comando para &blista de ciudades.
+options.newconfig.title=Crear configuracion.
+options.newconfig.prompt=Introduce un nombre para la nueva configuracion.
+options.newconfig.prompt2=Usar la direccion del servidor actual
+options.newconfig.option=Copiar configuracion actual
+options.defaultconfig=Configuracion por defecto
+options.addconfig=&7<Crear configuracion>
+
+gui.auto=Auto
+gui.add=Crear
+gui.save=Guardar
+gui.yes=Si
+gui.no=No
+gui.ok=OK
+gui.cancel=Cancelar
+gui.create=Crear
+gui.icon=Icono
+gui.copy=Copiar
+gui.move=Mover
+gui.delete=Eliminar
+gui.edit=Editar
+gui.importall=<< Importar todo
+gui.refresh=Actualizar
+gui.buttonopts=Comandos del Panel de Botones
+
+macro.bind.title=Asignaciones
+macro.edit.title=Editar Macro
+macro.currentconfig=Configuracion: &f%s
+macro.config.global=Todas las configuraciones
+macro.prompt.execute=<Presiona una tecla asignada a un Macro para ejecutar>
+macro.prompt.edit=<Presiona la tecla a editar o hazle clic arriba>
+macro.prompt.bind=Editando Macro para &f%s
+macro.keyname.control=Control
+macro.keyname.alt=Alt
+macro.keyname.shift=Shift
+macro.option.title=Opciones
+macro.option.inhibit=No recordar parametros.
+macro.option.global=Aplicar para todas las configuraciones.
+macro.action.title=Acciones
+macro.action.editfile=Editar archivo...
+macro.help.title=Ayuda
+
+macro.help.line1=Indica los comandos a ejecutar. Puedes separar comandos usando "|"
+macro.help.line2=Por ejemplo: &c /give Player 123|/give Player 456
+
+macro.help.line3=Usa&c $$<file.txt> &6para incluir un archivo o&c $$m &6para seleccionar uno.
+macro.help.line4=Usa&c $$? &6o&c $$[nombre] &6para que se pida un texto.
+macro.help.line5=Usa &c$$0&6-&c$$9 &6para que se pida un texto prefijado.
+macro.help.line6=Usa &c$$i &6para que se pida un objeto o, &c$$i:d &6para un objeto con desgaste.
+macro.help.line7=Usa &c$$t &6para que se pida una ciudad, o &c$$w &6para que se pida un warp.
+macro.help.line8=Usa &c$$f &6para que se pida un amigo, o &c$$u &6para seleccionar un jugador online.
+macro.help.line9=Usa &c$$h &6para que se pida un home, o &c$$p &6para un lugar (coordenadas)
+macro.help.line10=Usa &c$$! &6para finalizar un Macro
+macro.help.line11=Debes empezar y acabar scripts con &c$${&6 y &c}$$&6
+
+macro.help.line12=Usar conjuntamente con la tecla:
+macro.help.line13=El Macro solo se activara cuando se pulsen las
+macro.help.line14=teclas indicadas.
+
+macro.help.inhibit=Para prevenir que se guarden los parametros:
+macro.help.global=Para usar este Macro en todas las configuraciones:
+
+param.prompt.param=Escribe el parametro&e%s&c para <&e%s&c>
+param.prompt.inner=Escribe el parametro interno &e%s&c para <&e%s&c>
+param.prompt.named=Escribe el parametro para <&e%s&c>
+param.prompt.item=Escribe el ID de objeto para <&e%s&c>
+param.prompt.town=Escribe el nombre de la ciudad para <&e%s&c>
+param.prompt.home=Escribe el nombre del home para <&e%s&c>
+param.prompt.person=Escribe el nombre %s para <&e%s&c>
+param.prompt.friend=amigo
+param.prompt.user=usuario
+
+param.action.confirmdelete=¿Estas seguro de que deseas elimitar
+param.action.confirmdeletefile=¿Estas seguro de que deseas eliminar el archivo
+
+list.new.file=&7<Nuevo archivo>
+list.new.friend=&7<Nuevo amigo>
+list.new.home=&7<Nuevo home>
+list.new.town=&7<Nueva ciudad>
+list.new.preset=&7<Nueva entrada>
+list.prompt.preset=Escribe algo
+
+editor.choosefile=Elige el archivo a editar:
+editor.createnewfile=Crear un nuevo archivo:
+editor.editing=Editando %s
+
+entry.newentry=Nueva entrada:
+entry.newfriend=Nuevo amigo:
+entry.newtown=Nueva ciudad:
+entry.newhome=Nuevo home:
+entry.newfile=Nuevo archivo:
+entry.editentry=Editar entrada:
+entry.editfriend=Editar amigo:
+entry.edittown=Editar ciudad:
+entry.editgome=Editar home:
+entry.chooseicon=Elegir icono:
+
+query.wait=Buscando, espera por favor...
+query.failed=La busqueda no obtuvo resultados.
+query.results=aResultados de la busqueda:
+
+list.new.place=&7<Crear lugar>
+entry.newplace=Nuevo lugar:
+entry.editplace=Editar lugar:
+entry.usemylocation=<< Usar las coordenadas actuales
+macro.mode.normal=Macro normal
+macro.mode.keystate=Macro de estado de tecla
+
+macro.prompt.edit.simple=<Presiona una tecla de Macro para editar>
+macro.prompt.keydown=Presionar
+macro.prompt.keyheld=Mantener
+macro.prompt.keyup=Soltar
+macro.prompt.repeatrate=Tiempo entre repeticiones (ms)
+
+macro.help2.line1=Los Macros de "estado de tecla" te permiten asignar varios Macros a:
+macro.help2.line2=&csoltar&6, &cpresionar&6 y &cmantener&6 tecla. En este tipo de Macro no
+macro.help2.line3=puedes incluir parametros, pero si archivos usando &c$$<file.txt>
+macro.help2.line4=Puedes usar scripts, pero funciones como por ejemplo
+macro.help2.line5=&cesperar&6 y &cloop&6 no funcionan con &cmantener tecla&6.
+
+script.error.stack=Sintaxis erronea, puede que hayas dejado algo sin cerrar.
+script.error.context=Contexto invalido en el script.
+script.error.stackoverflow=Stack Overflow en el script.
+
+options.option.alwaysgoback=Volver a las opciones de Macros
+options.option.optionsfirst=Mostrar Opciones antes que Ayuda
+options.option.simple=Usar una interfaz mas sencilla.
+options.option.runstatus=El menu "override" muestra el estado de Macros
+options.option.configs=Opciones de configuracion
+options.option.configs.use=Usar ajustes especificos para:
+options.option.configs.friends=Lista de amigos
+options.option.configs.homes=Lista de homes
+options.option.configs.towns=Lista de ciudades
+options.option.configs.warps=Lista de warps
+options.option.configs.places=Lista de lugares
+options.option.configs.presets=Elementos prefijados
+options.option.commandwarplist=&fComando de &bLista de Warps
+options.option.commandwarplist2=&fComando para &bLista de Warps &fadicionales
+options.option.commandwarplist2help=&7Usa &b%s &7para indicar la pagina
+options.option.advanced=Opciones avanzadas
+options.option.reserved=Editar teclas reservadas
+
+param.prompt.warp=Introduce el nombre del warp para: <&e%s&c>
+list.new.warp=&7<Nuevo Warp>
+entry.newwarp=Nuevo warp:
+entry.editwarp=Editar warp:
+
+macro.option.inhibit.simple=Sin parametros
+macro.option.global.simple=Global
+
+macro.hover.empty=&8<Vacio>
+
+gui.options=Cambiar opciones...
+
+options.option.directmode=Acceder al menu ingame sin &bagacharse
+options.option.compatibilitymode=Modo compatible (requiere reinicio)
+options.option.disabledeepinject=Desactivar "deep injection"
+options.option.keyboardedit=Distribucion del teclado editable
+options.option.debug=Activar modo debug
+options.option.chathistory=Guardar mensajes enviados localmente
+
+entry.displayname=Nombre a mostrar
+
+message.usingpack=&b[MACROS] Usando pack de texturas &a%s
+message.badpack=&b[MACROS] No se pudo encontrar el pack de texturas &a%s
+message.failedpack=&b[MACROS] Error cargando el pack de texturas &a%s&b. Volviendo al de serie.
+
+script.error.nosign=&cNo tienes un cartel en la mano.
+
+macro.help.always=Para forzar a Macros a hacer "override" a teclas conflictivas.
+macro.option.always=Siempre hacer "override"
+macro.option.always.simple=Reforzar "override"
+
+macro.hover.overlay=Actualmente usado por &a%s
+
+message.config=&b[MACROS] Usando configuracion &a%s
+message.overlay.add=&b[MACROS] Importando configuracion &a%s
+message.overlay.remove=&b[MACROS] Desactivando configuracion importada &a%s
+
+tooltip.options=Opciones
+tooltip.editfile=Editor de texto
+tooltip.icons=Modificar iconos
+tooltip.bind=Atajos de tecla
+
+macro.icons.title=Modificar iconos
+macro.icons.help=Haz clic en un icono para realizar una captura.
+macro.icons.town=Iconos de ciudades:
+macro.icons.homes=Iconos de homes:
+
+thumbnail.help.hint1=Encuadra la captura, y haz clic o
+thumbnail.help.hint2=pulsa intro para guardarla.
+
+editor.title=Editar archivo de texto
+
+options.option.animation=Usar animaciones
+options.option.rememberpage=Recordar &bparametros &fintroducidos
+
+macro.prompt.edit.event=<Elige el evento a editar>
+macro.prompt.edit.button=<Elige el boton a editar>
+macro.prompt.edit.buttons=<Clic izquierdo para editar atajos de teclado, derecho para propiedades>
+macro.prompt.edit.unknown=&4<Ayuda no disponible>
+
+editor.rename.prompt=Introduce un nombre nuevo para el archivo
+editor.savechanges=¿Deseas guardar cambios en el archivo
+editor.title.minimise=Minimizar editor
+editor.prompt.minimise=Esto minimizara el editor
+editor.prompt.saveonmin=¿Deseas guardar primero el archivo?
+editor.prompt.remember=Hacer esto siempre
+
+firstrun.title=Macros ∫
+firstrun.line1=Felicidades!
+firstrun.line2=El mod &eMacros / Keybind Mod&6 ha sido cargado con exito.
+firstrun.line3=Se recomienda que configures la funcion &e"Override"
+firstrun.line4=y los &eatajos de teclado &6 en la seccion &econtroles&6 de opciones de
+firstrun.line5=Minecraft. pulsa &eConfigurar Macros&6 para hacerlo ahora. 
+firstrun.line6=Puedes modificar los ajustes en cualquier momento, accediendo a
+firstrun.line7=&eOpciones&6 -> &eControles&6 desde el menu del juego.
+firstrun.yes=Configurar atajos
+firstrun.no=Cancelar
+
+options.option.largebuttons=Mostrar botones mas grandes
+options.option.showslots=Mostrar numero de inventario
+options.option.autoscale=Ajustar el teclado a la pantalla
+
+control.properties.title=Propiedades de %s
+control.properties.name=Nombre de Control:
+control.properties.button.hide=Esconder cuando no se use
+control.properties.button.text=Mostrar texto
+control.properties.button.sticky=No cerrar la interfaz al hacer clic
+
+grid.properties.title=Opciones de la tabla
+grid.properties.rows=Filas
+grid.properties.cols=Columnas

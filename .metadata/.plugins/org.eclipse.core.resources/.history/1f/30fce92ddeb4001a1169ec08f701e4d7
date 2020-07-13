@@ -1,0 +1,89 @@
+package br.com.sgcraft.listeners;
+
+import java.util.ArrayList;
+
+import org.bukkit.Location;
+import org.bukkit.Material;
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.player.PlayerInteractEntityEvent;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
+
+public class AdminListener implements Listener {
+
+	public static ArrayList<Player> presidiarios = new ArrayList<>();
+
+	@EventHandler
+	public void clicar(PlayerInteractEntityEvent e) {
+		if (e.getRightClicked() instanceof Player) {
+			Player alvo = (Player) e.getRightClicked();
+
+			Player p = e.getPlayer();
+
+			if (p.getItemInHand() == null)
+				return;
+			ItemStack prender = new ItemStack(Material.IRON_FENCE);
+			ItemMeta meta = prender.getItemMeta();
+			meta.setDisplayName("§cPrender");
+			prender.setItemMeta(meta);
+			if (prender.equals(p.getItemInHand())) {
+				if (presidiarios.contains(alvo)) {
+					alvo.sendMessage("§aVoce foi solto pelo staff " + p.getName());
+					presidiarios.remove(alvo);
+
+					Location loc = alvo.getLocation();
+					loc.clone().add(0, -1, 0).getBlock().setType(Material.AIR);
+					;
+					loc.clone().add(1, 0, 0).getBlock().setType(Material.AIR);
+					;
+					loc.clone().add(0, 0, 1).getBlock().setType(Material.AIR);
+					;
+					// loc.clone().add(1, 0, 1).getBlock().setType(Material.AIR);
+					;
+					loc.clone().add(0, 0, -1).getBlock().setType(Material.AIR);
+					;
+					loc.clone().add(-1, 0, 0).getBlock().setType(Material.AIR);
+					;
+					// loc.clone().add(-1, 0, -1).getBlock().setType(Material.AIR);
+					;
+					// loc.clone().add(-1, 0, 1).getBlock().setType(Material.AIR);
+					;
+					// loc.clone().add(1, 0, -1).getBlock().setType(Material.AIR);
+					;
+					loc.clone().add(0, 2, 0).getBlock().setType(Material.AIR);
+					;
+
+				} else {
+					presidiarios.add(alvo);
+					alvo.teleport(alvo.getLocation().add(-0.5, 0.5, -0.5));
+					alvo.sendMessage("§cSe deslogar o pal come assinado " + p.getName());
+					Location loc = alvo.getLocation();
+					loc.clone().add(0, -1, 0).getBlock().setType(Material.BEDROCK);
+					;
+					loc.clone().add(1, 0, 0).getBlock().setType(Material.BEDROCK);
+					;
+					loc.clone().add(0, 0, 1).getBlock().setType(Material.BEDROCK);
+					;
+					// loc.clone().add(1, 0, 1).getBlock().setType(Material.BEDROCK);
+					;
+					loc.clone().add(0, 0, -1).getBlock().setType(Material.BEDROCK);
+					;
+					loc.clone().add(-1, 0, 0).getBlock().setType(Material.BEDROCK);
+					;
+					// loc.clone().add(-1, 0, -1).getBlock().setType(Material.BEDROCK);
+					;
+					// loc.clone().add(-1, 0, 1).getBlock().setType(Material.BEDROCK);
+					;
+					// loc.clone().add(1, 0, -1).getBlock().setType(Material.BEDROCK);
+					;
+					loc.clone().add(0, 2, 0).getBlock().setType(Material.BEDROCK);
+					;
+				}
+			}
+
+		}
+	}
+
+}
