@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<classpath>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="C:/Users/igors/Desktop/etc/liteloader-1.8.9-SNAPSHOT-release.jar"/>
-	<classpathentry kind="lib" path="C:/Users/igors/Desktop/etc/forge-1.8.9-11.15.1.2318-1.8.9-universal.jar"/>
-	<classpathentry kind="lib" path="C:/Users/igors/Desktop/etc/1.8.9.jar"/>
-	<classpathentry kind="output" path="bin"/>
-</classpath>
